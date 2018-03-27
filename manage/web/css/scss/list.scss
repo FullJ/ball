@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+/**
+ * list.scss
+ */
+$tabHeight: 66px;
+$tabliWidth: 120px;
+$tablineHeight: 26px;
+$stepHeight: 34px;
+$imgwidth: 68px;
+$navHeight: 50px;
+%sorthandle {
+    position: absolute;
+    cursor: pointer;
+    &:before {
+        font-family: "iconfont";
+    }
+}
+
+.g-list-tab {
+    @extend .g-f-clearfix;
+    padding: 5px 0;
+    font-size: 16px;
+    line-height: 20px;
+    background: $withe;
+    & li {
+        @extend .g-f-fl;
+        margin-bottom: 15px;
+        padding-right: 30px;
+        text-align: center;
+        line-height: $tablineHeight;
+        a {
+            padding-bottom: 6px;
+        }
+    }
+    & li._active a {
+        color: $primaryOrange;
+        border-bottom: 2px solid $primaryOrange;
+    }
+    & li:hover a {
+        color: $primaryOrange;
+        border-bottom: 2px solid $primaryOrange;
+    }
+}
+.g-list-tab-long{
+    @extend .g-list-tab;
+    height: 35px;
+    overflow: hidden;
+    position: relative;
+    padding-right: 60px;
+    & li {
+        a {
+            &:after {
+                content: '/';
+                color: #e2e2e2;
+                padding-left: 15px;
+                line-height: 20px;
+            }
+        }
+        &._toggle-btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: #fff;
+            height: 35px;
+            width: 35px;
+            font-size: 26px;
+            line-height: 34px;
+            text-align: right;
+            color: #bbb;
+            cursor: pointer;
+            &:after {
+                content: '\e660';
+                font-family: 'iconfont';
+            }
+            &.show:after {
+                content: '\e65f';
+                font-family: 'iconfont';
+            }
+
+        }
+    }
+}
+
+.g-list-nav {
+    @extend .g-f-clearfix;
+    font-size: 16px;
+    background: $withe;
+    margin-left: 10px;
+    & li {
+        @extend .g-f-fl;
+        text-align: center;
+        line-height: $navHeight;
+        margin: 0 20px;
+        position: relative;
+        color: $middleGray;
+    }
+    & li._active, & li:hover {
+        a {
+            color: $primaryRed;
+        }
+    }
+    & li._active {
+        &:after {
+            content: '';
+            border-bottom: 3px solid $primaryOrange;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+}
+
+.g-list-step {
+    @extend .g-f-clearfix;
+    font-size: 16px;
+    & li {
+        @extend .g-f-fl;
+        width: $tabliWidth;
+        text-align: center;
+        line-height: $stepHeight;
+        background: $lightGray;
+        margin-right: 10px;
+        color: $withe;
+    }
+    & li._active {
+        background: $primaryRed;
+    }
+}
+
+.g-list-sort {
+    & > * {
+        $w: 200px;
+        @extend .g-f-clearfix;
+        position: relative;
+        & > * {
+            float: left;
+        }
+        & > ._sort-content {
+            @extend .g-f-clearfix;
+            & > * {
+                float: left;
+                line-height: 34px;
+            }
+            & span {
+                width: $w;
+                height: 34px;
+                padding: 0 10px;
+                &.show {
+                    background: $primaryOrange;
+                    color: $withe;
+                }
+            }
+            & input[type="text"] {
+                @extend .g-input;
+                min-width: 8em !important;
+                width: $w;
+            }
+        }
+        & > ._sort-handle {
+            padding-left: 10px;
+            position: relative;
+            width: 35px;
+            height: 34px;
+            .__up {
+                @extend %sorthandle;
+                top: 3px;
+                &:before {
+                    content: "\e626";
+                }
+            }
+            .__down {
+                @extend %sorthandle;
+                bottom: 3px;
+                &:before {
+                    content: "\e627";
+                }
+            }
+            .__del {
+                @extend %sorthandle;
+                right: 0;
+                top: 10px;
+                &:before {
+                    content: "\e608";
+                }
+            }
+            .__edit {
+                @extend %sorthandle;
+                right: 0;
+                top: 10px;
+                &:before {
+                    content: "\e640";
+                }
+            }
+        }
+
+    }
+    & > * + * {
+        margin-top: 10px;
+    }
+}
+
+.g-list-img {
+    @extend .g-f-clearfix;
+    & li {
+        @extend .g-f-fl;
+        @include size($imgwidth);
+        position: relative;
+        margin-right: 10px;
+        cursor: pointer;
+        & img {
+            @include size(100%);
+        }
+        ._handle {
+            @include size(68px);
+            position: absolute;
+            background: rgba(0, 0, 0, .5);
+            top: 0;
+            left: 0;
+            z-index: 10;
+            display: none;
+            line-height: 68px;
+            & > * {
+                flex: 1;
+                text-align: center;
+                color: $withe;
+            }
+        }
+    }
+    & li:hover {
+        ._handle {
+            display: flex;
+        }
+    }
+}
+

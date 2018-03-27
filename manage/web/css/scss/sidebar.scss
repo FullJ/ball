@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+/**
+ * sidebar.scss
+ */
+$hover:#e5613c;
+$topPadd:68px;
+$sideAvatar: 76px;
+$userSize:18px;
+$navSize:16px;
+$navBg:#778899;
+$userHeight:30px;
+$fontTop:5px;
+
+.g-sidebar{
+    padding-top:$topPadd;
+    background: #696969;
+    background-size:cover;
+    // box-shadow: 2px 2px 10px #d5d8db;
+    border-right:1px solid #d5d8db;
+    ._top{
+        text-align: center;
+        padding-bottom: 28px;
+        .__avatar{
+            width:$sideWidth;
+            height: $sideAvatar;
+            & img{
+                border-radius: 100%;
+                border: 1px solid $primaryOrange;
+                @include size(76px);
+            }
+        }
+        .__user{
+            width:$sideWidth;
+            font-size: $userSize;
+            line-height: $userHeight;
+            cursor: pointer;
+            position:relative;
+            left:0;
+            top:$fontTop;
+            color: #fff;
+            &:after {
+                content:'';
+                display: inline-block;
+                width: 0;
+                height: 0;
+                vertical-align: middle;
+                border-top: 7px dashed;
+                border-right: 5px solid transparent;
+                border-left: 5px solid transparent;
+                margin-left: 5px;
+            }
+            & ._dropdown-menu{
+                position:absolute;
+                top:$userHeight;
+                left:26%;
+                background:#fff;
+                border: 1px solid rgba(0,0,0,.15);
+                box-shadow: 0 6px 12px rgba(0,0,0,.175);
+                font-size:14px;
+                z-index:100;
+                li{
+                    padding:0;
+                    a{
+                        display: block;
+                        padding: 3px 20px;
+                        clear: both;
+                        font-weight: 400;
+                        white-space: nowrap;
+                        margin: 4px;
+                        text-align: left;
+                        border-radius: 3px;
+                    }
+                }
+                li+li{
+                    border-top:1px solid #e5e5e5;
+                }
+            }
+        }
+        .__font{
+            width:$sideWidth;
+            color: #fff;
+            margin-top: $fontTop;
+        }
+    }
+    .g-scroll-list{
+        overflow-y: auto;
+        overflow-x: hidden;
+
+    }
+    .g-scroll-list::-webkit-scrollbar {
+        width: 0;
+    }
+    ._nav-list{
+        //overflow: hidden;
+        cursor: pointer;
+        &>li{
+            position:relative;
+            font-size:$navSize;
+            line-height: 46px;
+            border-bottom: 1px solid $navBg;
+            color: $withe;
+            border-left:5px solid rgba(0,0,0,0);
+            &>a{
+                display: block;
+                position: relative;
+                width:$sideWidth - 55;
+                height:46px;
+                margin-left: 50px;
+                color:$withe;
+                span{
+                    position:absolute;
+                    left:-50px;
+                    padding-left: 17px;
+                }
+                label{
+                    position: absolute;
+                    right: 10px;
+                }
+            }
+            &:hover,&.active{
+                background: $navBg;
+            }
+            &:hover>a,&.active>a{
+                color:$primaryOrange;
+            }
+            &.active .__nav-list{
+                display: block;
+            }
+            &.active{
+                //border-left: 5px solid $primaryOrange;
+                &:after{
+                    font-family: 'iconfont';
+                    content:'\e845';
+                    display:block;
+                    position: absolute;
+                    right: 12px;
+                    top:0;
+                }
+            }
+        }
+    }
+    .__nav-list{
+        display: none;
+        & li{
+            margin-left: 45px;
+            &>a{
+                color: #fff;
+                 span{
+                    padding-right: 10px;
+                }
+            }
+            &:hover>a{
+                color:$primaryOrange;
+            }
+        }
+
+    }
+}
+@media (max-width: 1280px) {
+
+}

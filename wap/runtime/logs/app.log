@@ -1,0 +1,3096 @@
+2018-02-12 00:39:45 [192.168.10.1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /vagrant/ws/project/vendor/yiisoft/yii2/web/Request.php:281
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2018-02-12 00:39:45 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/seat/comfirm-info'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '50719'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518367185.6126
+    'REQUEST_TIME' => 1518367185
+]
+2018-02-12 00:39:54 [192.168.10.1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /vagrant/ws/project/vendor/yiisoft/yii2/web/Request.php:281
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2018-02-12 00:39:54 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/seat/confirm-info'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '50719'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518367194.7734
+    'REQUEST_TIME' => 1518367194
+]
+2018-02-12 00:40:40 [192.168.10.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Primary key of 'common\models\BuyOperaUser' can not be empty.' in /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php:261
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(209): yii\db\ActiveQuery->removeDuplicatedModels(Array)
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(294): yii\db\ActiveQuery->populate(Array)
+#2 /vagrant/ws/project/wap/modules/v1/services/SeatService.php(140): yii\db\ActiveQuery->one()
+#3 /vagrant/ws/project/wap/modules/v1/controllers/SeatController.php(54): wap\modules\v1\services\SeatService->confirmInfo('oGfUG0TXpr8_THN...', NULL)
+#4 [internal function]: wap\modules\v1\controllers\SeatController->actionConfirmInfo()
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('confirm-info', Array)
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/seat/confirm...', Array)
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2018-02-12 00:40:40 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-12 00:40:40 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-12 00:40:40 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/seat/confirm-info'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '50719'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518367240.5086
+    'REQUEST_TIME' => 1518367240
+]
+2018-02-12 00:43:08 [192.168.10.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: name' in /vagrant/ws/project/wap/modules/v1/services/SeatService.php:151
+Stack trace:
+#0 /vagrant/ws/project/wap/modules/v1/services/SeatService.php(151): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/vagrant/ws/pro...', 151, Array)
+#1 /vagrant/ws/project/wap/modules/v1/controllers/SeatController.php(54): wap\modules\v1\services\SeatService->confirmInfo('oGfUG0TXpr8_THN...', NULL)
+#2 [internal function]: wap\modules\v1\controllers\SeatController->actionConfirmInfo()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('confirm-info', Array)
+#6 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/seat/confirm...', Array)
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#9 {main}
+2018-02-12 00:43:08 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-12 00:43:07 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/seat/confirm-info'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '50753'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518367387.6302
+    'REQUEST_TIME' => 1518367387
+]
+2018-02-12 00:43:30 [192.168.10.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: start_time' in /vagrant/ws/project/wap/modules/v1/services/SeatService.php:152
+Stack trace:
+#0 /vagrant/ws/project/wap/modules/v1/services/SeatService.php(152): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/vagrant/ws/pro...', 152, Array)
+#1 /vagrant/ws/project/wap/modules/v1/controllers/SeatController.php(54): wap\modules\v1\services\SeatService->confirmInfo('oGfUG0TXpr8_THN...', NULL)
+#2 [internal function]: wap\modules\v1\controllers\SeatController->actionConfirmInfo()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('confirm-info', Array)
+#6 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/seat/confirm...', Array)
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#9 {main}
+2018-02-12 00:43:30 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-12 00:43:29 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/seat/confirm-info'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '50753'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518367409.7576
+    'REQUEST_TIME' => 1518367409
+]
+2018-02-12 00:43:53 [192.168.10.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: position' in /vagrant/ws/project/wap/modules/v1/services/SeatService.php:157
+Stack trace:
+#0 /vagrant/ws/project/wap/modules/v1/services/SeatService.php(157): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/vagrant/ws/pro...', 157, Array)
+#1 /vagrant/ws/project/wap/modules/v1/controllers/SeatController.php(54): wap\modules\v1\services\SeatService->confirmInfo('oGfUG0TXpr8_THN...', NULL)
+#2 [internal function]: wap\modules\v1\controllers\SeatController->actionConfirmInfo()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('confirm-info', Array)
+#6 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/seat/confirm...', Array)
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#9 {main}
+2018-02-12 00:43:53 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-12 00:43:52 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/seat/confirm-info'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '50753'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518367432.8217
+    'REQUEST_TIME' => 1518367432
+]
+2018-02-12 00:44:07 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-12 00:44:07 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/seat/confirm-info'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '50753'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518367447.105
+    'REQUEST_TIME' => 1518367447
+]
+2018-02-12 00:54:01 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-12 00:54:01 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/seat/get-seat'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '50927'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518368041.3574
+    'REQUEST_TIME' => 1518368041
+]
+2018-02-12 01:04:29 [192.168.10.1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'level' in field list is ambiguous' in /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php:1067
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1067): PDOStatement->execute()
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 /vagrant/ws/project/wap/modules/v1/services/SeatService.php(30): yii\db\ActiveQuery->all()
+#5 /vagrant/ws/project/wap/modules/v1/controllers/SeatController.php(29): wap\modules\v1\services\SeatService->getSeat('<span class="nu...', '<span class="nu...')
+#6 [internal function]: wap\modules\v1\controllers\SeatController->actionGetSeat()
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#11 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'level' in field list is ambiguous
+The SQL being executed was: SELECT `position`, `price`, `type`, `schedule_position`.`status` AS `schedule_status`, `seat_position_set`.`seat_position_set_id`, `seat_position_set`.`status` AS `hall_status`, `sort`, `level` FROM `seat_position_set` LEFT JOIN `schedule_position` ON schedule_position.seat_position_set_id=seat_position_set.seat_position_set_id and schedule_id=1 LEFT JOIN `opera_seat_price` ON opera_seat_price.level=seat_position_set.level WHERE `new_seat_id`='1'' in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1082): yii\db\Schema->convertException(Object(PDOException), 'SELECT `positio...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 /vagrant/ws/project/wap/modules/v1/services/SeatService.php(30): yii\db\ActiveQuery->all()
+#5 /vagrant/ws/project/wap/modules/v1/controllers/SeatController.php(29): wap\modules\v1\services\SeatService->getSeat('<span class="nu...', '<span class="nu...')
+#6 [internal function]: wap\modules\v1\controllers\SeatController->actionGetSeat()
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#11 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1052
+    [2] => Column 'level' in field list is ambiguous
+)
+
+2018-02-12 01:04:29 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-12 01:04:29 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-12 01:04:29 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/seat/get-seat'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '51051'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518368669.2766
+    'REQUEST_TIME' => 1518368669
+]
+2018-02-12 01:05:23 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-12 01:05:22 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/seat/get-seat'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '51051'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518368722.7924
+    'REQUEST_TIME' => 1518368722
+]
+2018-02-12 01:06:34 [192.168.10.1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /vagrant/ws/project/vendor/yiisoft/yii2/web/Request.php:281
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2018-02-12 01:06:33 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/seat/get-opera'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '51086'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518368793.8278
+    'REQUEST_TIME' => 1518368793
+]
+2018-02-12 01:06:39 [192.168.10.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: offline_time' in /vagrant/ws/project/wap/modules/v1/services/OperaService.php:91
+Stack trace:
+#0 /vagrant/ws/project/wap/modules/v1/services/OperaService.php(91): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/vagrant/ws/pro...', 91, Array)
+#1 /vagrant/ws/project/wap/modules/v1/controllers/OperaController.php(48): wap\modules\v1\services\OperaService->getOpera(NULL)
+#2 [internal function]: wap\modules\v1\controllers\OperaController->actionGetOpera()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('get-opera', Array)
+#6 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/opera/get-op...', Array)
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#9 {main}
+2018-02-12 01:06:39 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-12 01:06:39 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/opera/get-opera'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '51086'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518368799.3376
+    'REQUEST_TIME' => 1518368799
+]
+2018-02-12 01:06:56 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-12 01:06:55 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/opera/schedule'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '51086'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518368815.9308
+    'REQUEST_TIME' => 1518368815
+]
+2018-02-12 01:07:15 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-12 01:07:15 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/opera/schedule'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '51086'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518368835.0907
+    'REQUEST_TIME' => 1518368835
+]
+2018-02-12 01:09:31 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-12 01:09:30 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/seat/get-seat'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '51086'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518368970.3835
+    'REQUEST_TIME' => 1518368970
+]
+2018-02-14 00:32:21 [192.168.10.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'customer_card.name' in 'field list'' in /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php:1067
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1067): PDOStatement->execute()
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 /vagrant/ws/project/wap/modules/v1/services/SeatService.php(109): yii\db\ActiveQuery->all()
+#5 /vagrant/ws/project/wap/modules/v1/controllers/SeatController.php(53): wap\modules\v1\services\SeatService->confirmInfo('<span class="st...', '<span class="ke...')
+#6 [internal function]: wap\modules\v1\controllers\SeatController->actionConfirmInfo()
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#11 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'customer_card.name' in 'field list'
+The SQL being executed was: SELECT `customer_card`.`name`, `customer_card`.`card` FROM `customer_card` LEFT JOIN `card` ON card.id=customer_card.card WHERE `openid`='oGfUG0TXpr8_THNs3Z7BArkhdsK0'' in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1082): yii\db\Schema->convertException(Object(PDOException), 'SELECT `custome...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 /vagrant/ws/project/wap/modules/v1/services/SeatService.php(109): yii\db\ActiveQuery->all()
+#5 /vagrant/ws/project/wap/modules/v1/controllers/SeatController.php(53): wap\modules\v1\services\SeatService->confirmInfo('<span class="st...', '<span class="ke...')
+#6 [internal function]: wap\modules\v1\controllers\SeatController->actionConfirmInfo()
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#11 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'customer_card.name' in 'field list'
+)
+
+2018-02-14 00:32:21 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-14 00:32:21 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-14 00:32:21 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/seat/confirm-info'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '52269'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518539541.4124
+    'REQUEST_TIME' => 1518539541
+]
+2018-02-16 12:27:13 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 12:27:12 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/opera/list'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '54501'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518755232.81
+    'REQUEST_TIME' => 1518755232
+]
+2018-02-16 12:27:28 [192.168.10.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'wap\modules\v1\controllers\BaseSessionController' not found' in /vagrant/ws/project/wap/modules/v1/controllers/OrderController.php:16
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-02-16 12:27:28 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 12:27:28 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/order/list'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '54501'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518755248.355
+    'REQUEST_TIME' => 1518755248
+]
+2018-02-16 12:27:49 [192.168.10.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'schedule.opera_id' in 'on clause'' in /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php:1067
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1067): PDOStatement->execute()
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 /vagrant/ws/project/wap/modules/v1/services/OrderService.php(25): yii\db\ActiveQuery->all()
+#5 /vagrant/ws/project/wap/modules/v1/controllers/OrderController.php(22): wap\modules\v1\services\OrderService->getList('<span class="st...')
+#6 [internal function]: wap\modules\v1\controllers\OrderController->actionList()
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#11 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'schedule.opera_id' in 'on clause'
+The SQL being executed was: SELECT `customer_ticket`.`id`, `opera`.`name`, `trade_no`, `schedule`.`name`, `schedule`.`start_time`, `schedule`.`end_time`, `customer_ticket`.`number` FROM `customer_ticket` LEFT JOIN `opera` ON opera.id=schedule.opera_id LEFT JOIN `schedule` ON schedule.id=customer_ticket.schedule WHERE `openid`='oGfUG0TXpr8_THNs3Z7BArkhdsK0'' in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1082): yii\db\Schema->convertException(Object(PDOException), 'SELECT `custome...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 /vagrant/ws/project/wap/modules/v1/services/OrderService.php(25): yii\db\ActiveQuery->all()
+#5 /vagrant/ws/project/wap/modules/v1/controllers/OrderController.php(22): wap\modules\v1\services\OrderService->getList('<span class="st...')
+#6 [internal function]: wap\modules\v1\controllers\OrderController->actionList()
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#11 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'schedule.opera_id' in 'on clause'
+)
+
+2018-02-16 12:27:50 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 12:27:50 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 12:27:49 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/order/list'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '54501'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518755269.6723
+    'REQUEST_TIME' => 1518755269
+]
+2018-02-16 12:37:27 [192.168.10.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: pay_time' in /vagrant/ws/project/wap/modules/v1/services/OrderService.php:27
+Stack trace:
+#0 /vagrant/ws/project/wap/modules/v1/services/OrderService.php(27): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/vagrant/ws/pro...', 27, Array)
+#1 /vagrant/ws/project/wap/modules/v1/controllers/OrderController.php(22): wap\modules\v1\services\OrderService->getList('ohzaMwAiGvHtpXJ...')
+#2 [internal function]: wap\modules\v1\controllers\OrderController->actionList()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('list', Array)
+#6 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/order/list', Array)
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#9 {main}
+2018-02-16 12:37:27 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 12:37:27 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/order/list'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '54598'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518755847.3378
+    'REQUEST_TIME' => 1518755847
+]
+2018-02-16 12:38:10 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 12:38:10 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/order/list'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '54598'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518755890.0291
+    'REQUEST_TIME' => 1518755890
+]
+2018-02-16 12:38:32 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 12:38:31 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/order/list'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '54598'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518755911.8305
+    'REQUEST_TIME' => 1518755911
+]
+2018-02-16 12:50:46 [192.168.10.1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /vagrant/ws/project/vendor/yiisoft/yii2/web/Request.php:281
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2018-02-16 12:50:46 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/opera/detail'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '54796'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518756646.1304
+    'REQUEST_TIME' => 1518756646
+]
+2018-02-16 12:51:18 [192.168.10.1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /vagrant/ws/project/vendor/yiisoft/yii2/web/Request.php:281
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2018-02-16 12:51:18 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/opera/detail'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '54796'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518756678.2924
+    'REQUEST_TIME' => 1518756678
+]
+2018-02-16 12:52:03 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 12:52:03 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/order/detail'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '54796'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518756723.4033
+    'REQUEST_TIME' => 1518756723
+]
+2018-02-16 12:52:26 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 12:52:25 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/order/detail'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '54796'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518756745.7565
+    'REQUEST_TIME' => 1518756745
+]
+2018-02-16 12:52:56 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 12:52:54 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/order/detail'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '54796'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518756774.0705
+    'REQUEST_TIME' => 1518756774
+]
+2018-02-16 12:55:14 [192.168.10.1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous' in /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php:1067
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1067): PDOStatement->execute()
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 /vagrant/ws/project/wap/modules/v1/services/OrderService.php(44): yii\db\ActiveQuery->all()
+#5 /vagrant/ws/project/wap/modules/v1/controllers/OrderController.php(35): wap\modules\v1\services\OrderService->detail('<span class="st...', '<span class="nu...')
+#6 [internal function]: wap\modules\v1\controllers\OrderController->actionDetail()
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#11 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+The SQL being executed was: SELECT `customer_ticket`.`id`, `pay_time`, `fee`, `image`, `opera`.`name`, `trade_no`, `schedule`.`name`, `schedule`.`start_time`, `schedule`.`end_time`, `customer_ticket`.`number` FROM `customer_ticket` LEFT JOIN `schedule` ON schedule.id=customer_ticket.schedule LEFT JOIN `opera` ON opera.id=schedule.opera_id WHERE (`openid`='ohzaMwAiGvHtpXJigWjTuVuvBFwI') AND (`id`=1)' in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1082): yii\db\Schema->convertException(Object(PDOException), 'SELECT `custome...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 /vagrant/ws/project/wap/modules/v1/services/OrderService.php(44): yii\db\ActiveQuery->all()
+#5 /vagrant/ws/project/wap/modules/v1/controllers/OrderController.php(35): wap\modules\v1\services\OrderService->detail('<span class="st...', '<span class="nu...')
+#6 [internal function]: wap\modules\v1\controllers\OrderController->actionDetail()
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#11 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1052
+    [2] => Column 'id' in where clause is ambiguous
+)
+
+2018-02-16 12:55:14 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 12:55:14 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 12:55:14 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/order/detail'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '54865'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518756913.9785
+    'REQUEST_TIME' => 1518756913
+]
+2018-02-16 12:55:25 [192.168.10.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: pay_time' in /vagrant/ws/project/wap/modules/v1/services/OrderService.php:45
+Stack trace:
+#0 /vagrant/ws/project/wap/modules/v1/services/OrderService.php(45): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/vagrant/ws/pro...', 45, Array)
+#1 /vagrant/ws/project/wap/modules/v1/controllers/OrderController.php(35): wap\modules\v1\services\OrderService->detail('ohzaMwAiGvHtpXJ...', 1)
+#2 [internal function]: wap\modules\v1\controllers\OrderController->actionDetail()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('detail', Array)
+#6 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/order/detail', Array)
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#9 {main}
+2018-02-16 12:55:25 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 12:55:24 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/order/detail'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '54865'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518756924.5763
+    'REQUEST_TIME' => 1518756924
+]
+2018-02-16 13:01:33 [192.168.10.1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /vagrant/ws/project/vendor/yiisoft/yii2/web/Request.php:281
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2018-02-16 13:01:32 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/order/mine'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '54955'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518757292.8792
+    'REQUEST_TIME' => 1518757292
+]
+2018-02-16 13:01:43 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 13:01:39 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/opera/mine'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '54955'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518757299.7389
+    'REQUEST_TIME' => 1518757299
+]
+2018-02-16 13:01:59 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 13:01:58 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/opera/mine'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '54955'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518757318.635
+    'REQUEST_TIME' => 1518757318
+]
+2018-02-16 21:16:50 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 21:16:49 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/order/list'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '55597'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518787009.284
+    'REQUEST_TIME' => 1518787009
+]
+2018-02-16 21:37:48 [192.168.10.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'comment.id' in 'field list'' in /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php:1067
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1067): PDOStatement->execute()
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 /vagrant/ws/project/wap/modules/v1/services/OperaService.php(241): yii\db\ActiveQuery->all()
+#5 /vagrant/ws/project/wap/modules/v1/controllers/OperaController.php(100): wap\modules\v1\services\OperaService->commentList('<span class="st...')
+#6 [internal function]: wap\modules\v1\controllers\OperaController->actionCommentList()
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#11 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'comment.id' in 'field list'
+The SQL being executed was: SELECT `opera`.`name`, `comment`.`id`, `comment`.`content`, `star` FROM `comment` LEFT JOIN `opera` ON opera.id=comment.opera_id WHERE `openid`='ohzaMwAiGvHtpXJigWjTuVuvBFwI'' in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1082): yii\db\Schema->convertException(Object(PDOException), 'SELECT `opera`....')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 /vagrant/ws/project/wap/modules/v1/services/OperaService.php(241): yii\db\ActiveQuery->all()
+#5 /vagrant/ws/project/wap/modules/v1/controllers/OperaController.php(100): wap\modules\v1\services\OperaService->commentList('<span class="st...')
+#6 [internal function]: wap\modules\v1\controllers\OperaController->actionCommentList()
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#11 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'comment.id' in 'field list'
+)
+
+2018-02-16 21:37:48 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 21:37:48 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 21:37:47 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/opera/comment-list'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '55888'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518788267.2914
+    'REQUEST_TIME' => 1518788267
+]
+2018-02-16 21:38:41 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 21:38:40 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/opera/comment-list'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '55888'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518788320.7222
+    'REQUEST_TIME' => 1518788320
+]
+2018-02-16 21:39:08 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 21:39:07 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/opera/comment-list'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '55888'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518788347.7512
+    'REQUEST_TIME' => 1518788347
+]
+2018-02-16 21:46:40 [192.168.10.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `openid`='oGfUG0S1dfpIxkrPsRAoNvEZy0VU'' at line 1' in /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php:1067
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1067): PDOStatement->execute()
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 /vagrant/ws/project/wap/modules/v1/services/OperaService.php(253): yii\db\ActiveQuery->all()
+#5 /vagrant/ws/project/wap/modules/v1/controllers/OperaController.php(113): wap\modules\v1\services\OperaService->coupon('<span class="st...')
+#6 [internal function]: wap\modules\v1\controllers\OperaController->actionCoupon()
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#11 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `openid`='oGfUG0S1dfpIxkrPsRAoNvEZy0VU'' at line 1
+The SQL being executed was: SELECT `customer_coupon`.* FROM `customer_coupon` LEFT JOIN `coupon`.`name` LEFT JOIN `coupon` ON coupon.id=customer_coupon.coupon_id WHERE `openid`='oGfUG0S1dfpIxkrPsRAoNvEZy0VU'' in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1082): yii\db\Schema->convertException(Object(PDOException), 'SELECT `custome...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 /vagrant/ws/project/wap/modules/v1/services/OperaService.php(253): yii\db\ActiveQuery->all()
+#5 /vagrant/ws/project/wap/modules/v1/controllers/OperaController.php(113): wap\modules\v1\services\OperaService->coupon('<span class="st...')
+#6 [internal function]: wap\modules\v1\controllers\OperaController->actionCoupon()
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#11 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `openid`='oGfUG0S1dfpIxkrPsRAoNvEZy0VU'' at line 1
+)
+
+2018-02-16 21:46:40 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 21:46:40 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 21:46:40 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/opera/coupon'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '55996'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518788800.2669
+    'REQUEST_TIME' => 1518788800
+]
+2018-02-16 21:47:17 [192.168.10.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `openid`='oGfUG0S1dfpIxkrPsRAoNvEZy0VU'' at line 1' in /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php:1067
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1067): PDOStatement->execute()
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 /vagrant/ws/project/wap/modules/v1/services/OperaService.php(253): yii\db\ActiveQuery->all()
+#5 /vagrant/ws/project/wap/modules/v1/controllers/OperaController.php(113): wap\modules\v1\services\OperaService->coupon('<span class="st...')
+#6 [internal function]: wap\modules\v1\controllers\OperaController->actionCoupon()
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#11 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `openid`='oGfUG0S1dfpIxkrPsRAoNvEZy0VU'' at line 1
+The SQL being executed was: SELECT `customer_coupon`.* FROM `customer_coupon` LEFT JOIN `coupon`.`name` LEFT JOIN `coupon` ON coupon.id=customer_coupon.coupon_id WHERE `openid`='oGfUG0S1dfpIxkrPsRAoNvEZy0VU'' in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1082): yii\db\Schema->convertException(Object(PDOException), 'SELECT `custome...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 /vagrant/ws/project/wap/modules/v1/services/OperaService.php(253): yii\db\ActiveQuery->all()
+#5 /vagrant/ws/project/wap/modules/v1/controllers/OperaController.php(113): wap\modules\v1\services\OperaService->coupon('<span class="st...')
+#6 [internal function]: wap\modules\v1\controllers\OperaController->actionCoupon()
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#11 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `openid`='oGfUG0S1dfpIxkrPsRAoNvEZy0VU'' at line 1
+)
+
+2018-02-16 21:47:17 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 21:47:17 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 21:47:17 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/opera/coupon'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '55996'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518788837.0453
+    'REQUEST_TIME' => 1518788837
+]
+2018-02-16 21:47:43 [192.168.10.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `customer_coupon`.`openid`='oGfUG0S1dfpIxkrPsRAoNvEZy0VU'' at line 1' in /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php:1067
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1067): PDOStatement->execute()
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 /vagrant/ws/project/wap/modules/v1/services/OperaService.php(253): yii\db\ActiveQuery->all()
+#5 /vagrant/ws/project/wap/modules/v1/controllers/OperaController.php(113): wap\modules\v1\services\OperaService->coupon('<span class="st...')
+#6 [internal function]: wap\modules\v1\controllers\OperaController->actionCoupon()
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#11 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `customer_coupon`.`openid`='oGfUG0S1dfpIxkrPsRAoNvEZy0VU'' at line 1
+The SQL being executed was: SELECT `customer_coupon`.* FROM `customer_coupon` LEFT JOIN `coupon`.`name` LEFT JOIN `coupon` ON coupon.id=customer_coupon.coupon_id WHERE `customer_coupon`.`openid`='oGfUG0S1dfpIxkrPsRAoNvEZy0VU'' in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1082): yii\db\Schema->convertException(Object(PDOException), 'SELECT `custome...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 /vagrant/ws/project/wap/modules/v1/services/OperaService.php(253): yii\db\ActiveQuery->all()
+#5 /vagrant/ws/project/wap/modules/v1/controllers/OperaController.php(113): wap\modules\v1\services\OperaService->coupon('<span class="st...')
+#6 [internal function]: wap\modules\v1\controllers\OperaController->actionCoupon()
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#11 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `customer_coupon`.`openid`='oGfUG0S1dfpIxkrPsRAoNvEZy0VU'' at line 1
+)
+
+2018-02-16 21:47:43 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 21:47:43 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 21:47:42 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/opera/coupon'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '55996'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518788862.4284
+    'REQUEST_TIME' => 1518788862
+]
+2018-02-16 21:48:18 [192.168.10.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img' in 'field list'' in /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php:1067
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1067): PDOStatement->execute()
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 /vagrant/ws/project/wap/modules/v1/services/OperaService.php(253): yii\db\ActiveQuery->all()
+#5 /vagrant/ws/project/wap/modules/v1/controllers/OperaController.php(113): wap\modules\v1\services\OperaService->coupon('<span class="st...')
+#6 [internal function]: wap\modules\v1\controllers\OperaController->actionCoupon()
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#11 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img' in 'field list'
+The SQL being executed was: SELECT `coupon`.`name`, `img` FROM `customer_coupon` LEFT JOIN `coupon` ON coupon.id=customer_coupon.coupon_id WHERE `customer_coupon`.`openid`='oGfUG0S1dfpIxkrPsRAoNvEZy0VU'' in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1082): yii\db\Schema->convertException(Object(PDOException), 'SELECT `coupon`...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 /vagrant/ws/project/wap/modules/v1/services/OperaService.php(253): yii\db\ActiveQuery->all()
+#5 /vagrant/ws/project/wap/modules/v1/controllers/OperaController.php(113): wap\modules\v1\services\OperaService->coupon('<span class="st...')
+#6 [internal function]: wap\modules\v1\controllers\OperaController->actionCoupon()
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#11 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'img' in 'field list'
+)
+
+2018-02-16 21:48:18 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 21:48:18 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 21:48:17 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/opera/coupon'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '55996'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518788897.6882
+    'REQUEST_TIME' => 1518788897
+]
+2018-02-16 21:48:27 [192.168.10.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'coupon.img' in 'field list'' in /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php:1067
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1067): PDOStatement->execute()
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 /vagrant/ws/project/wap/modules/v1/services/OperaService.php(253): yii\db\ActiveQuery->all()
+#5 /vagrant/ws/project/wap/modules/v1/controllers/OperaController.php(113): wap\modules\v1\services\OperaService->coupon('<span class="st...')
+#6 [internal function]: wap\modules\v1\controllers\OperaController->actionCoupon()
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#11 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'coupon.img' in 'field list'
+The SQL being executed was: SELECT `coupon`.`name`, `coupon`.`img` FROM `customer_coupon` LEFT JOIN `coupon` ON coupon.id=customer_coupon.coupon_id WHERE `customer_coupon`.`openid`='oGfUG0S1dfpIxkrPsRAoNvEZy0VU'' in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1082): yii\db\Schema->convertException(Object(PDOException), 'SELECT `coupon`...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 /vagrant/ws/project/wap/modules/v1/services/OperaService.php(253): yii\db\ActiveQuery->all()
+#5 /vagrant/ws/project/wap/modules/v1/controllers/OperaController.php(113): wap\modules\v1\services\OperaService->coupon('<span class="st...')
+#6 [internal function]: wap\modules\v1\controllers\OperaController->actionCoupon()
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#11 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'coupon.img' in 'field list'
+)
+
+2018-02-16 21:48:27 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 21:48:27 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 21:48:27 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/opera/coupon'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '55996'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518788906.9687
+    'REQUEST_TIME' => 1518788906
+]
+2018-02-16 21:51:16 [192.168.10.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'coupon.image，customer_coupon' in 'field list'' in /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php:1067
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1067): PDOStatement->execute()
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 /vagrant/ws/project/wap/modules/v1/services/OperaService.php(253): yii\db\ActiveQuery->all()
+#5 /vagrant/ws/project/wap/modules/v1/controllers/OperaController.php(113): wap\modules\v1\services\OperaService->coupon('<span class="st...')
+#6 [internal function]: wap\modules\v1\controllers\OperaController->actionCoupon()
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#11 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'coupon.image，customer_coupon' in 'field list'
+The SQL being executed was: SELECT `coupon`.`name`, `coupon`.`image，customer_coupon`, `customer_coupon`.`id` FROM `customer_coupon` LEFT JOIN `coupon` ON coupon.id=customer_coupon.coupon_id WHERE `customer_coupon`.`openid`='oGfUG0S1dfpIxkrPsRAoNvEZy0VU'' in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1082): yii\db\Schema->convertException(Object(PDOException), 'SELECT `coupon`...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 /vagrant/ws/project/wap/modules/v1/services/OperaService.php(253): yii\db\ActiveQuery->all()
+#5 /vagrant/ws/project/wap/modules/v1/controllers/OperaController.php(113): wap\modules\v1\services\OperaService->coupon('<span class="st...')
+#6 [internal function]: wap\modules\v1\controllers\OperaController->actionCoupon()
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#11 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'coupon.image，customer_coupon' in 'field list'
+)
+
+2018-02-16 21:51:16 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 21:51:16 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 21:51:16 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/opera/coupon'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '56068'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518789076.2102
+    'REQUEST_TIME' => 1518789076
+]
+2018-02-16 21:51:36 [192.168.10.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'customer_coupon' in 'field list'' in /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php:1067
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1067): PDOStatement->execute()
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 /vagrant/ws/project/wap/modules/v1/services/OperaService.php(253): yii\db\ActiveQuery->all()
+#5 /vagrant/ws/project/wap/modules/v1/controllers/OperaController.php(113): wap\modules\v1\services\OperaService->coupon('<span class="st...')
+#6 [internal function]: wap\modules\v1\controllers\OperaController->actionCoupon()
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#11 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'customer_coupon' in 'field list'
+The SQL being executed was: SELECT `coupon`.`name`, `coupon`.`image`, `customer_coupon`, `customer_coupon`.`id` FROM `customer_coupon` LEFT JOIN `coupon` ON coupon.id=customer_coupon.coupon_id WHERE `customer_coupon`.`openid`='oGfUG0S1dfpIxkrPsRAoNvEZy0VU'' in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:595
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1082): yii\db\Schema->convertException(Object(PDOException), 'SELECT `coupon`...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#4 /vagrant/ws/project/wap/modules/v1/services/OperaService.php(253): yii\db\ActiveQuery->all()
+#5 /vagrant/ws/project/wap/modules/v1/controllers/OperaController.php(113): wap\modules\v1\services\OperaService->coupon('<span class="st...')
+#6 [internal function]: wap\modules\v1\controllers\OperaController->actionCoupon()
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#11 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'customer_coupon' in 'field list'
+)
+
+2018-02-16 21:51:36 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 21:51:36 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 21:51:35 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/opera/coupon'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '56068'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518789095.4397
+    'REQUEST_TIME' => 1518789095
+]
+2018-02-16 21:52:11 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-16 21:52:10 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/opera/coupon'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '56068'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518789130.817
+    'REQUEST_TIME' => 1518789130
+]
+2018-02-17 10:48:44 [192.168.10.1][-][-][error][yii\db\Exception] exception 'yii\base\ErrorException' with message 'PDO::__construct(): MySQL server has gone away' in /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'PDO::__construc...', '/vagrant/ws/pro...', 660, Array)
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(660): PDO->__construct('mysql:host=120....', 'root', 'eBnFG8dqd0cB9x7...', NULL)
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#4 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#6 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('<span class="st...')
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('<span class="st...')
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('<span class="st...')
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#11 /vagrant/ws/project/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#12 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#13 /vagrant/ws/project/wap/modules/v1/services/OperaService.php(226): yii\db\ActiveQuery->all()
+#14 /vagrant/ws/project/wap/modules/v1/controllers/OperaController.php(93): wap\modules\v1\services\OperaService->mine('<span class="st...')
+#15 [internal function]: wap\modules\v1\controllers\OperaController->actionMine()
+#16 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#17 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#18 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#19 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#20 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#22 {main}
+
+Next exception 'PDOException' with message 'SQLSTATE[HY000] [2006] MySQL server has gone away' in /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php:660
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(0): PDO->__construct()
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(586): yii\db\Connection->createPdoInstance()
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#4 /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('<span class="st...')
+#6 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('<span class="st...')
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('<span class="st...')
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#11 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#12 /vagrant/ws/project/wap/modules/v1/services/OperaService.php(226): yii\db\ActiveQuery->all()
+#13 /vagrant/ws/project/wap/modules/v1/controllers/OperaController.php(93): wap\modules\v1\services\OperaService->mine('<span class="st...')
+#14 [internal function]: wap\modules\v1\controllers\OperaController->actionMine()
+#15 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#16 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#17 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#18 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#19 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#21 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2006] MySQL server has gone away' in /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php:597
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(943): yii\db\Connection->open()
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(930): yii\db\Connection->getMasterPdo()
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php(442): yii\db\Connection->getSlavePdo()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(838): yii\db\Schema->quoteValue('<span class="st...')
+#4 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(199): yii\db\Connection->quoteValue('<span class="st...')
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1018): yii\db\Command->getRawSql()
+#6 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1039): yii\db\Command->logQuery('<span class="st...')
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(386): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#8 /vagrant/ws/project/vendor/yiisoft/yii2/db/Query.php(217): yii\db\Command->queryAll()
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#10 /vagrant/ws/project/wap/modules/v1/services/OperaService.php(226): yii\db\ActiveQuery->all()
+#11 /vagrant/ws/project/wap/modules/v1/controllers/OperaController.php(93): wap\modules\v1\services\OperaService->mine('<span class="st...')
+#12 [internal function]: wap\modules\v1\controllers\OperaController->actionMine()
+#13 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#14 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams('[]')
+#15 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('<span class="st...', '[]')
+#16 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('<span class="st...', '[]')
+#17 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#19 {main}
+Additional Information:
+
+2018-02-17 10:48:44 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-17 10:48:44 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-17 10:48:26 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/opera/mine'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '56342'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518835705.9488
+    'REQUEST_TIME' => 1518835705
+]
+2018-02-17 10:52:52 [192.168.10.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Illegal string offset 'list'' in /vagrant/ws/project/wap/modules/v1/services/OperaService.php:237
+Stack trace:
+#0 /vagrant/ws/project/wap/modules/v1/services/OperaService.php(237): yii\base\ErrorHandler->handleError(2, 'Illegal string ...', '/vagrant/ws/pro...', 237, Array)
+#1 /vagrant/ws/project/wap/modules/v1/controllers/OperaController.php(93): wap\modules\v1\services\OperaService->mine('ohzaMwAiGvHtpXJ...')
+#2 [internal function]: wap\modules\v1\controllers\OperaController->actionMine()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('mine', Array)
+#6 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/opera/mine', Array)
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#9 {main}
+2018-02-17 10:52:52 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-17 10:52:46 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/opera/mine'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '56382'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1518835966.3753
+    'REQUEST_TIME' => 1518835966
+]
+2018-02-20 15:45:37 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-20 15:45:36 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/file/image'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '64028'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519112736.3934
+    'REQUEST_TIME' => 1519112736
+]
+2018-02-22 10:18:55 [192.168.10.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\models\OperaLike' not found' in /vagrant/ws/project/wap/modules/v1/services/OperaService.php:299
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-02-22 10:18:55 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-22 10:18:55 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/opera/like'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '50457'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519265935.3224
+    'REQUEST_TIME' => 1519265935
+]
+2018-02-22 10:21:10 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-22 10:21:09 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/opera/like'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '50594'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519266069.7466
+    'REQUEST_TIME' => 1519266069
+]
+2018-02-22 10:29:02 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-22 10:29:02 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/opera/like-list'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '51855'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519266542.4032
+    'REQUEST_TIME' => 1519266542
+]
+2018-02-22 10:39:51 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-22 10:39:50 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/opera/like-list'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '54403'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519267190.4074
+    'REQUEST_TIME' => 1519267190
+]
+2018-02-24 20:41:43 [192.168.10.1][-][-][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /vagrant/ws/project/vendor/yiisoft/yii2/web/Request.php:281
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(82): yii\web\Request->resolve()
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#3 {main}
+2018-02-24 20:41:43 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/seat/confirm-info'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '52557'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519476102.9997
+    'REQUEST_TIME' => 1519476102
+]
+2018-02-24 20:42:32 [192.168.10.1][-][-][error][Exception] exception 'Exception' with message 'open_id未找到' in /vagrant/ws/project/wap/modules/v1/services/SeatService.php:116
+Stack trace:
+#0 /vagrant/ws/project/wap/modules/v1/controllers/SeatController.php(49): wap\modules\v1\services\SeatService->confirmInfo(NULL, NULL)
+#1 [internal function]: wap\modules\v1\controllers\SeatController->actionConfirmInfo()
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('confirm-info', Array)
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/seat/confirm...', Array)
+#6 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->run()
+#8 {main}
+2018-02-24 20:42:32 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-24 20:42:32 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-24 20:42:32 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/seat/confirm-info'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '52557'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519476152.1014
+    'REQUEST_TIME' => 1519476152
+]
+2018-02-24 20:43:15 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-24 20:43:14 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/seat/confirm-info'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '52557'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519476194.1315
+    'REQUEST_TIME' => 1519476194
+]
+2018-02-24 20:43:41 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-24 20:43:40 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/seat/confirm-info'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '52557'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519476220.2854
+    'REQUEST_TIME' => 1519476220
+]
+2018-02-24 20:43:44 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-24 20:43:43 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/seat/confirm-info'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '52557'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519476223.2684
+    'REQUEST_TIME' => 1519476223
+]
+2018-02-24 20:44:25 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-24 20:44:24 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/seat/confirm-info'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '52557'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519476264.9203
+    'REQUEST_TIME' => 1519476264
+]
+2018-02-24 20:45:32 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-24 20:45:30 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/seat/confirm-info'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '52557'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519476330.8769
+    'REQUEST_TIME' => 1519476330
+]
+2018-02-24 21:16:59 [192.168.10.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.10.1
+2018-02-24 21:16:57 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/seat/confirm-info'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '57901'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1519478217.7195
+    'REQUEST_TIME' => 1519478217
+]
+2018-03-08 23:37:01 [192.168.10.1][-][-][error][yii\db\Exception] exception 'yii\db\Exception' with message 'Redis error: ERR invalid password
+Redis command was: AUTH 2a624f328ef18a1e2f3a0f217996bcd' in /vagrant/ws/project/vendor/yiisoft/yii2-redis/Connection.php:729
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2-redis/Connection.php(706): yii\redis\Connection->parseResponse('AUTH 2a624f328e...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2-redis/Connection.php(690): yii\redis\Connection->sendCommandInternal('*2\r\n$4\r\nAUTH\r\n$...', Array)
+#2 /vagrant/ws/project/vendor/yiisoft/yii2-redis/Connection.php(556): yii\redis\Connection->executeCommand('AUTH', Array)
+#3 /vagrant/ws/project/vendor/yiisoft/yii2-redis/Connection.php(665): yii\redis\Connection->open()
+#4 /vagrant/ws/project/vendor/yiisoft/yii2-redis/Cache.php(102): yii\redis\Connection->executeCommand('GET', Array)
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/caching/Cache.php(114): yii\redis\Cache->getValue('963454f612a8b5f...')
+#6 /vagrant/ws/project/vendor/yiisoft/yii2/web/UrlManager.php(187): yii\caching\Cache->get('yii\\web\\UrlMana...')
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/base/BaseObject.php(108): yii\web\UrlManager->init()
+#8 [internal function]: yii\base\BaseObject->__construct(Array)
+#9 /vagrant/ws/project/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#11 /vagrant/ws/project/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#12 /vagrant/ws/project/vendor/yiisoft/yii2/di/ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#13 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(724): yii\di\ServiceLocator->get('urlManager', true)
+#14 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(571): yii\base\Module->get('urlManager')
+#15 /vagrant/ws/project/vendor/yiisoft/yii2-debug/Module.php(197): yii\base\Application->getUrlManager()
+#16 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(327): yii\debug\Module->bootstrap(Object(yii\web\Application))
+#17 /vagrant/ws/project/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#18 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#19 /vagrant/ws/project/vendor/yiisoft/yii2/base/BaseObject.php(108): yii\base\Application->init()
+#20 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#21 /vagrant/ws/project/wap/web/index.php(17): yii\base\Application->__construct(Array)
+#22 {main}
+Additional Information:
+Array
+(
+)
+
+2018-03-08 23:37:01 [192.168.10.1][-][-][info][application] $_SERVER = [
+    'XHPROF_ROOT_PATH' => '/vagrant/xhprof'
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PATH_INFO' => ''
+    'SCRIPT_FILENAME' => '/vagrant/ws/project/wap/web/index.php'
+    'PATH_TRANSLATED' => '/vagrant/ws/project/wap/web'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/seat/confirm-info'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/vagrant/ws/project/wap/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.2'
+    'REMOTE_ADDR' => '192.168.10.1'
+    'REMOTE_PORT' => '50680'
+    'SERVER_ADDR' => '192.168.10.33'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'wap.small.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wap.small.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1520523421.4712
+    'REQUEST_TIME' => 1520523421
+]

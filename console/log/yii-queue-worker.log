@@ -1,0 +1,914 @@
+2018-03-22 11:06:57 [pid: 3503]2018-03-22 11:06:57 [pid: 3505] - Worker is started
+ - Worker is started
+2018-03-22 11:06:57 [pid: 3504] - Worker is started
+2018-03-22 11:06:57 [pid: 3506] - Worker is started
+2018-03-22 11:13:13 [pid: 3503] - Worker is stopped (0:06:16)
+2018-03-22 11:13:13 [pid: 3504] - Worker is stopped (0:06:16)
+2018-03-22 11:13:13 [pid: 3505] - Worker is stopped (0:06:16)
+2018-03-22 11:13:13 [pid: 3506] - Worker is stopped (0:06:16)
+2018-03-22 11:17:14 [pid: 3591] - Worker is started
+2018-03-22 11:17:14 [pid: 3594] - Worker is started
+2018-03-22 11:17:142018-03-22 11:17:14 [pid: 3595] - Worker is started
+ [pid: 3592] - Worker is started
+2018-03-22 11:52:32 [pid: 3591] - Worker is stopped (0:35:18)
+Exception 'yii\db\Exception' with message 'PDOStatement::execute(): MySQL server has gone away
+The SQL being executed was: SELECT GET_LOCK('yii\\queue\\db\\Queuedefault', 3)'
+
+in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:664
+
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(yii\base\ErrorException), 'SELECT GET_LOCK...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT GET_LOCK...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(425): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/mutex/MysqlMutex.php(64): yii\db\Command->queryScalar()
+#4 [internal function]: yii\mutex\MysqlMutex->yii\mutex\{closure}(Object(yii\db\Connection))
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1070): call_user_func(Object(Closure), Object(yii\db\Connection))
+#6 /vagrant/ws/project/vendor/yiisoft/yii2/mutex/MysqlMutex.php(65): yii\db\Connection->useMaster(Object(Closure))
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/mutex/Mutex.php(72): yii\mutex\MysqlMutex->acquireLock('yii\\queue\\db\\Qu...', 3)
+#8 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(179): yii\mutex\Mutex->acquire('yii\\queue\\db\\Qu...', 3)
+#9 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\db\Connection))
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1059): call_user_func(Object(Closure), Object(yii\db\Connection))
+#11 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(212): yii\db\Connection->useMaster(Object(Closure))
+#12 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(79): yii\queue\db\Queue->reserve()
+#13 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\queue\cli\SignalLoop))
+#14 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/cli/Queue.php(108): call_user_func(Object(Closure), Object(yii\queue\cli\SignalLoop))
+#15 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(94): yii\queue\cli\Queue->runWorker(Object(Closure))
+#16 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Command.php(68): yii\queue\db\Queue->run(true, 3)
+#17 [internal function]: yii\queue\db\Command->actionListen(3)
+#18 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#19 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#20 /vagrant/ws/project/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('listen', Array)
+#21 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('listen', Array)
+#22 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#23 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#24 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#25 /vagrant/ws/project/yii(27): yii\base\Application->run()
+#26 {main}
+2018-03-22 11:52:33 [pid: 3594] - Worker is stopped (0:35:19)
+Exception 'yii\db\Exception' with message 'PDOStatement::execute(): MySQL server has gone away
+The SQL being executed was: SELECT GET_LOCK('yii\\queue\\db\\Queuedefault', 3)'
+
+in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:664
+
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(yii\base\ErrorException), 'SELECT GET_LOCK...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT GET_LOCK...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(425): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/mutex/MysqlMutex.php(64): yii\db\Command->queryScalar()
+#4 [internal function]: yii\mutex\MysqlMutex->yii\mutex\{closure}(Object(yii\db\Connection))
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1070): call_user_func(Object(Closure), Object(yii\db\Connection))
+#6 /vagrant/ws/project/vendor/yiisoft/yii2/mutex/MysqlMutex.php(65): yii\db\Connection->useMaster(Object(Closure))
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/mutex/Mutex.php(72): yii\mutex\MysqlMutex->acquireLock('yii\\queue\\db\\Qu...', 3)
+#8 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(179): yii\mutex\Mutex->acquire('yii\\queue\\db\\Qu...', 3)
+#9 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\db\Connection))
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1059): call_user_func(Object(Closure), Object(yii\db\Connection))
+#11 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(212): yii\db\Connection->useMaster(Object(Closure))
+#12 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(79): yii\queue\db\Queue->reserve()
+#13 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\queue\cli\SignalLoop))
+#14 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/cli/Queue.php(108): call_user_func(Object(Closure), Object(yii\queue\cli\SignalLoop))
+#15 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(94): yii\queue\cli\Queue->runWorker(Object(Closure))
+#16 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Command.php(68): yii\queue\db\Queue->run(true, 3)
+#17 [internal function]: yii\queue\db\Command->actionListen(3)
+#18 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#19 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#20 /vagrant/ws/project/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('listen', Array)
+#21 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('listen', Array)
+#22 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#23 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#24 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#25 /vagrant/ws/project/yii(27): yii\base\Application->run()
+#26 {main}
+2018-03-22 11:52:33 [pid: 3592] - Worker is stopped (0:35:19)
+Exception 'yii\db\Exception' with message 'PDOStatement::execute(): MySQL server has gone away
+The SQL being executed was: SELECT GET_LOCK('yii\\queue\\db\\Queuedefault', 3)'
+
+in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:664
+
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(yii\base\ErrorException), 'SELECT GET_LOCK...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT GET_LOCK...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(425): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/mutex/MysqlMutex.php(64): yii\db\Command->queryScalar()
+#4 [internal function]: yii\mutex\MysqlMutex->yii\mutex\{closure}(Object(yii\db\Connection))
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1070): call_user_func(Object(Closure), Object(yii\db\Connection))
+#6 /vagrant/ws/project/vendor/yiisoft/yii2/mutex/MysqlMutex.php(65): yii\db\Connection->useMaster(Object(Closure))
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/mutex/Mutex.php(72): yii\mutex\MysqlMutex->acquireLock('yii\\queue\\db\\Qu...', 3)
+#8 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(179): yii\mutex\Mutex->acquire('yii\\queue\\db\\Qu...', 3)
+#9 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\db\Connection))
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1059): call_user_func(Object(Closure), Object(yii\db\Connection))
+#11 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(212): yii\db\Connection->useMaster(Object(Closure))
+#12 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(79): yii\queue\db\Queue->reserve()
+#13 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\queue\cli\SignalLoop))
+#14 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/cli/Queue.php(108): call_user_func(Object(Closure), Object(yii\queue\cli\SignalLoop))
+#15 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(94): yii\queue\cli\Queue->runWorker(Object(Closure))
+#16 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Command.php(68): yii\queue\db\Queue->run(true, 3)
+#17 [internal function]: yii\queue\db\Command->actionListen(3)
+#18 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#19 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#20 /vagrant/ws/project/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('listen', Array)
+#21 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('listen', Array)
+#22 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#23 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#24 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#25 /vagrant/ws/project/yii(27): yii\base\Application->run()
+#26 {main}
+2018-03-22 11:52:33 [pid: 3595] - Worker is stopped (0:35:19)
+Exception 'yii\db\Exception' with message 'PDOStatement::execute(): MySQL server has gone away
+The SQL being executed was: SELECT GET_LOCK('yii\\queue\\db\\Queuedefault', 3)'
+
+in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:664
+
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(yii\base\ErrorException), 'SELECT GET_LOCK...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1148): yii\db\Command->internalExecute('SELECT GET_LOCK...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(425): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 /vagrant/ws/project/vendor/yiisoft/yii2/mutex/MysqlMutex.php(64): yii\db\Command->queryScalar()
+#4 [internal function]: yii\mutex\MysqlMutex->yii\mutex\{closure}(Object(yii\db\Connection))
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1070): call_user_func(Object(Closure), Object(yii\db\Connection))
+#6 /vagrant/ws/project/vendor/yiisoft/yii2/mutex/MysqlMutex.php(65): yii\db\Connection->useMaster(Object(Closure))
+#7 /vagrant/ws/project/vendor/yiisoft/yii2/mutex/Mutex.php(72): yii\mutex\MysqlMutex->acquireLock('yii\\queue\\db\\Qu...', 3)
+#8 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(179): yii\mutex\Mutex->acquire('yii\\queue\\db\\Qu...', 3)
+#9 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\db\Connection))
+#10 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1059): call_user_func(Object(Closure), Object(yii\db\Connection))
+#11 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(212): yii\db\Connection->useMaster(Object(Closure))
+#12 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(79): yii\queue\db\Queue->reserve()
+#13 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\queue\cli\SignalLoop))
+#14 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/cli/Queue.php(108): call_user_func(Object(Closure), Object(yii\queue\cli\SignalLoop))
+#15 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(94): yii\queue\cli\Queue->runWorker(Object(Closure))
+#16 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Command.php(68): yii\queue\db\Queue->run(true, 3)
+#17 [internal function]: yii\queue\db\Command->actionListen(3)
+#18 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#19 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#20 /vagrant/ws/project/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('listen', Array)
+#21 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('listen', Array)
+#22 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#23 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#24 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#25 /vagrant/ws/project/yii(27): yii\base\Application->run()
+#26 {main}
+2018-03-22 11:52:33 [pid: 3636] - Worker is started
+2018-03-22 11:52:33 [pid: 3638] - Worker is started
+2018-03-22 11:52:34 [pid: 3640] - Worker is started
+2018-03-22 11:52:34 [pid: 3642] - Worker is started
+2018-03-22 11:56:07 [11] console\jobs\SendWechatMsgJob (attempt: 1, pid: 3640) - Started
+2018-03-22 11:56:07 [11] console\jobs\SendWechatMsgJob (attempt: 1, pid: 3640) - Error (0.025 s)
+> yii\base\ErrorException: ob_clean(): failed to delete buffer. No buffer to delete
+2018-03-22 11:56:19 [12] console\jobs\SendWechatMsgJob (attempt: 1, pid: 3636) - Started
+2018-03-22 11:56:19 [12] console\jobs\SendWechatMsgJob (attempt: 1, pid: 3636) - Error (0.016 s)
+> yii\base\ErrorException: ob_clean(): failed to delete buffer. No buffer to delete
+2018-03-22 11:57:42 [pid: 3636] - Worker is stopped (0:05:09)
+Exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'reserved_at' cannot be null
+The SQL being executed was: UPDATE `queue` SET `reserved_at`=NULL WHERE `reserved_at` < 1521691062 - `ttr` and `done_at` is null'
+
+in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:664
+
+Error Info:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'reserved_at' cannot be null
+)
+
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `queue` ...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1075): yii\db\Command->internalExecute('UPDATE `queue` ...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(248): yii\db\Command->execute()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(184): yii\queue\db\Queue->moveExpired()
+#4 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\db\Connection))
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1059): call_user_func(Object(Closure), Object(yii\db\Connection))
+#6 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(212): yii\db\Connection->useMaster(Object(Closure))
+#7 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(79): yii\queue\db\Queue->reserve()
+#8 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\queue\cli\SignalLoop))
+#9 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/cli/Queue.php(108): call_user_func(Object(Closure), Object(yii\queue\cli\SignalLoop))
+#10 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(94): yii\queue\cli\Queue->runWorker(Object(Closure))
+#11 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Command.php(68): yii\queue\db\Queue->run(true, 3)
+#12 [internal function]: yii\queue\db\Command->actionListen(3)
+#13 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /vagrant/ws/project/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('listen', Array)
+#16 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('listen', Array)
+#17 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#18 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#19 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /vagrant/ws/project/yii(27): yii\base\Application->run()
+#21 {main}
+2018-03-22 11:57:42 [pid: 3640] - Worker is stopped (0:05:08)
+Exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'reserved_at' cannot be null
+The SQL being executed was: UPDATE `queue` SET `reserved_at`=NULL WHERE `reserved_at` < 1521691062 - `ttr` and `done_at` is null'
+
+in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:664
+
+Error Info:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'reserved_at' cannot be null
+)
+
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `queue` ...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1075): yii\db\Command->internalExecute('UPDATE `queue` ...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(248): yii\db\Command->execute()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(184): yii\queue\db\Queue->moveExpired()
+#4 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\db\Connection))
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1059): call_user_func(Object(Closure), Object(yii\db\Connection))
+#6 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(212): yii\db\Connection->useMaster(Object(Closure))
+#7 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(79): yii\queue\db\Queue->reserve()
+#8 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\queue\cli\SignalLoop))
+#9 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/cli/Queue.php(108): call_user_func(Object(Closure), Object(yii\queue\cli\SignalLoop))
+#10 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(94): yii\queue\cli\Queue->runWorker(Object(Closure))
+#11 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Command.php(68): yii\queue\db\Queue->run(true, 3)
+#12 [internal function]: yii\queue\db\Command->actionListen(3)
+#13 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /vagrant/ws/project/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('listen', Array)
+#16 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('listen', Array)
+#17 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#18 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#19 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /vagrant/ws/project/yii(27): yii\base\Application->run()
+#21 {main}
+2018-03-22 11:57:42 [pid: 3642] - Worker is stopped (0:05:08)
+Exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'reserved_at' cannot be null
+The SQL being executed was: UPDATE `queue` SET `reserved_at`=NULL WHERE `reserved_at` < 1521691062 - `ttr` and `done_at` is null'
+
+in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:664
+
+Error Info:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'reserved_at' cannot be null
+)
+
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `queue` ...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1075): yii\db\Command->internalExecute('UPDATE `queue` ...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(248): yii\db\Command->execute()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(184): yii\queue\db\Queue->moveExpired()
+#4 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\db\Connection))
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1059): call_user_func(Object(Closure), Object(yii\db\Connection))
+#6 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(212): yii\db\Connection->useMaster(Object(Closure))
+#7 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(79): yii\queue\db\Queue->reserve()
+#8 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\queue\cli\SignalLoop))
+#9 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/cli/Queue.php(108): call_user_func(Object(Closure), Object(yii\queue\cli\SignalLoop))
+#10 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(94): yii\queue\cli\Queue->runWorker(Object(Closure))
+#11 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Command.php(68): yii\queue\db\Queue->run(true, 3)
+#12 [internal function]: yii\queue\db\Command->actionListen(3)
+#13 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /vagrant/ws/project/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('listen', Array)
+#16 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('listen', Array)
+#17 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#18 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#19 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /vagrant/ws/project/yii(27): yii\base\Application->run()
+#21 {main}
+2018-03-22 11:57:42 [pid: 3668] - Worker is started
+2018-03-22 11:57:42 [pid: 3668] - Worker is stopped (0:00:00)
+Exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'reserved_at' cannot be null
+The SQL being executed was: UPDATE `queue` SET `reserved_at`=NULL WHERE `reserved_at` < 1521691062 - `ttr` and `done_at` is null'
+
+in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:664
+
+Error Info:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'reserved_at' cannot be null
+)
+
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `queue` ...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1075): yii\db\Command->internalExecute('UPDATE `queue` ...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(248): yii\db\Command->execute()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(184): yii\queue\db\Queue->moveExpired()
+#4 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\db\Connection))
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1059): call_user_func(Object(Closure), Object(yii\db\Connection))
+#6 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(212): yii\db\Connection->useMaster(Object(Closure))
+#7 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(79): yii\queue\db\Queue->reserve()
+#8 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\queue\cli\SignalLoop))
+#9 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/cli/Queue.php(108): call_user_func(Object(Closure), Object(yii\queue\cli\SignalLoop))
+#10 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(94): yii\queue\cli\Queue->runWorker(Object(Closure))
+#11 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Command.php(68): yii\queue\db\Queue->run(true, 3)
+#12 [internal function]: yii\queue\db\Command->actionListen(3)
+#13 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /vagrant/ws/project/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('listen', Array)
+#16 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('listen', Array)
+#17 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#18 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#19 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /vagrant/ws/project/yii(27): yii\base\Application->run()
+#21 {main}
+2018-03-22 11:57:42 [pid: 3638] - Worker is stopped (0:05:09)
+Exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'reserved_at' cannot be null
+The SQL being executed was: UPDATE `queue` SET `reserved_at`=NULL WHERE `reserved_at` < 1521691062 - `ttr` and `done_at` is null'
+
+in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:664
+
+Error Info:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'reserved_at' cannot be null
+)
+
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `queue` ...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1075): yii\db\Command->internalExecute('UPDATE `queue` ...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(248): yii\db\Command->execute()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(184): yii\queue\db\Queue->moveExpired()
+#4 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\db\Connection))
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1059): call_user_func(Object(Closure), Object(yii\db\Connection))
+#6 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(212): yii\db\Connection->useMaster(Object(Closure))
+#7 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(79): yii\queue\db\Queue->reserve()
+#8 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\queue\cli\SignalLoop))
+#9 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/cli/Queue.php(108): call_user_func(Object(Closure), Object(yii\queue\cli\SignalLoop))
+#10 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(94): yii\queue\cli\Queue->runWorker(Object(Closure))
+#11 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Command.php(68): yii\queue\db\Queue->run(true, 3)
+#12 [internal function]: yii\queue\db\Command->actionListen(3)
+#13 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /vagrant/ws/project/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('listen', Array)
+#16 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('listen', Array)
+#17 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#18 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#19 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /vagrant/ws/project/yii(27): yii\base\Application->run()
+#21 {main}
+2018-03-22 11:57:42 [pid: 3670] - Worker is started
+2018-03-22 11:57:42 [pid: 3670] - Worker is stopped (0:00:00)
+Exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'reserved_at' cannot be null
+The SQL being executed was: UPDATE `queue` SET `reserved_at`=NULL WHERE `reserved_at` < 1521691062 - `ttr` and `done_at` is null'
+
+in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:664
+
+Error Info:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'reserved_at' cannot be null
+)
+
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `queue` ...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1075): yii\db\Command->internalExecute('UPDATE `queue` ...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(248): yii\db\Command->execute()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(184): yii\queue\db\Queue->moveExpired()
+#4 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\db\Connection))
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1059): call_user_func(Object(Closure), Object(yii\db\Connection))
+#6 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(212): yii\db\Connection->useMaster(Object(Closure))
+#7 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(79): yii\queue\db\Queue->reserve()
+#8 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\queue\cli\SignalLoop))
+#9 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/cli/Queue.php(108): call_user_func(Object(Closure), Object(yii\queue\cli\SignalLoop))
+#10 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(94): yii\queue\cli\Queue->runWorker(Object(Closure))
+#11 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Command.php(68): yii\queue\db\Queue->run(true, 3)
+#12 [internal function]: yii\queue\db\Command->actionListen(3)
+#13 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /vagrant/ws/project/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('listen', Array)
+#16 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('listen', Array)
+#17 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#18 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#19 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /vagrant/ws/project/yii(27): yii\base\Application->run()
+#21 {main}
+2018-03-22 11:57:42 [pid: 3672] - Worker is started
+2018-03-22 11:57:43 [pid: 3672] - Worker is stopped (0:00:01)
+Exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'reserved_at' cannot be null
+The SQL being executed was: UPDATE `queue` SET `reserved_at`=NULL WHERE `reserved_at` < 1521691063 - `ttr` and `done_at` is null'
+
+in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:664
+
+Error Info:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'reserved_at' cannot be null
+)
+
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `queue` ...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1075): yii\db\Command->internalExecute('UPDATE `queue` ...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(248): yii\db\Command->execute()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(184): yii\queue\db\Queue->moveExpired()
+#4 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\db\Connection))
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1059): call_user_func(Object(Closure), Object(yii\db\Connection))
+#6 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(212): yii\db\Connection->useMaster(Object(Closure))
+#7 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(79): yii\queue\db\Queue->reserve()
+#8 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\queue\cli\SignalLoop))
+#9 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/cli/Queue.php(108): call_user_func(Object(Closure), Object(yii\queue\cli\SignalLoop))
+#10 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(94): yii\queue\cli\Queue->runWorker(Object(Closure))
+#11 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Command.php(68): yii\queue\db\Queue->run(true, 3)
+#12 [internal function]: yii\queue\db\Command->actionListen(3)
+#13 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /vagrant/ws/project/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('listen', Array)
+#16 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('listen', Array)
+#17 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#18 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#19 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /vagrant/ws/project/yii(27): yii\base\Application->run()
+#21 {main}
+2018-03-22 11:57:43 [pid: 3674] - Worker is started
+2018-03-22 11:57:43 [pid: 3674] - Worker is stopped (0:00:00)
+Exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'reserved_at' cannot be null
+The SQL being executed was: UPDATE `queue` SET `reserved_at`=NULL WHERE `reserved_at` < 1521691063 - `ttr` and `done_at` is null'
+
+in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:664
+
+Error Info:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'reserved_at' cannot be null
+)
+
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `queue` ...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1075): yii\db\Command->internalExecute('UPDATE `queue` ...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(248): yii\db\Command->execute()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(184): yii\queue\db\Queue->moveExpired()
+#4 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\db\Connection))
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1059): call_user_func(Object(Closure), Object(yii\db\Connection))
+#6 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(212): yii\db\Connection->useMaster(Object(Closure))
+#7 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(79): yii\queue\db\Queue->reserve()
+#8 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\queue\cli\SignalLoop))
+#9 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/cli/Queue.php(108): call_user_func(Object(Closure), Object(yii\queue\cli\SignalLoop))
+#10 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(94): yii\queue\cli\Queue->runWorker(Object(Closure))
+#11 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Command.php(68): yii\queue\db\Queue->run(true, 3)
+#12 [internal function]: yii\queue\db\Command->actionListen(3)
+#13 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /vagrant/ws/project/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('listen', Array)
+#16 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('listen', Array)
+#17 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#18 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#19 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /vagrant/ws/project/yii(27): yii\base\Application->run()
+#21 {main}
+2018-03-22 11:57:44 [pid: 3676] - Worker is started
+2018-03-22 11:57:44 [pid: 3678] - Worker is started
+2018-03-22 11:57:45 [pid: 3677] - Worker is started
+2018-03-22 11:57:45 [pid: 3679] - Worker is started
+2018-03-22 11:57:45 [pid: 3678] - Worker is stopped (0:00:01)
+Exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'reserved_at' cannot be null
+The SQL being executed was: UPDATE `queue` SET `reserved_at`=NULL WHERE `reserved_at` < 1521691065 - `ttr` and `done_at` is null'
+
+in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:664
+
+Error Info:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'reserved_at' cannot be null
+)
+
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `queue` ...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1075): yii\db\Command->internalExecute('UPDATE `queue` ...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(248): yii\db\Command->execute()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(184): yii\queue\db\Queue->moveExpired()
+#4 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\db\Connection))
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1059): call_user_func(Object(Closure), Object(yii\db\Connection))
+#6 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(212): yii\db\Connection->useMaster(Object(Closure))
+#7 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(79): yii\queue\db\Queue->reserve()
+#8 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\queue\cli\SignalLoop))
+#9 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/cli/Queue.php(108): call_user_func(Object(Closure), Object(yii\queue\cli\SignalLoop))
+#10 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(94): yii\queue\cli\Queue->runWorker(Object(Closure))
+#11 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Command.php(68): yii\queue\db\Queue->run(true, 3)
+#12 [internal function]: yii\queue\db\Command->actionListen(3)
+#13 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /vagrant/ws/project/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('listen', Array)
+#16 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('listen', Array)
+#17 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#18 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#19 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /vagrant/ws/project/yii(27): yii\base\Application->run()
+#21 {main}
+2018-03-22 11:57:45 [pid: 3676] - Worker is stopped (0:00:01)
+Exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'reserved_at' cannot be null
+The SQL being executed was: UPDATE `queue` SET `reserved_at`=NULL WHERE `reserved_at` < 1521691065 - `ttr` and `done_at` is null'
+
+in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:664
+
+Error Info:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'reserved_at' cannot be null
+)
+
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `queue` ...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1075): yii\db\Command->internalExecute('UPDATE `queue` ...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(248): yii\db\Command->execute()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(184): yii\queue\db\Queue->moveExpired()
+#4 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\db\Connection))
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1059): call_user_func(Object(Closure), Object(yii\db\Connection))
+#6 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(212): yii\db\Connection->useMaster(Object(Closure))
+#7 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(79): yii\queue\db\Queue->reserve()
+#8 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\queue\cli\SignalLoop))
+#9 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/cli/Queue.php(108): call_user_func(Object(Closure), Object(yii\queue\cli\SignalLoop))
+#10 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(94): yii\queue\cli\Queue->runWorker(Object(Closure))
+#11 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Command.php(68): yii\queue\db\Queue->run(true, 3)
+#12 [internal function]: yii\queue\db\Command->actionListen(3)
+#13 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /vagrant/ws/project/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('listen', Array)
+#16 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('listen', Array)
+#17 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#18 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#19 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /vagrant/ws/project/yii(27): yii\base\Application->run()
+#21 {main}
+2018-03-22 11:57:45 [pid: 3677] - Worker is stopped (0:00:00)
+Exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'reserved_at' cannot be null
+The SQL being executed was: UPDATE `queue` SET `reserved_at`=NULL WHERE `reserved_at` < 1521691065 - `ttr` and `done_at` is null'
+
+in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:664
+
+Error Info:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'reserved_at' cannot be null
+)
+
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `queue` ...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1075): yii\db\Command->internalExecute('UPDATE `queue` ...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(248): yii\db\Command->execute()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(184): yii\queue\db\Queue->moveExpired()
+#4 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\db\Connection))
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1059): call_user_func(Object(Closure), Object(yii\db\Connection))
+#6 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(212): yii\db\Connection->useMaster(Object(Closure))
+#7 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(79): yii\queue\db\Queue->reserve()
+#8 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\queue\cli\SignalLoop))
+#9 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/cli/Queue.php(108): call_user_func(Object(Closure), Object(yii\queue\cli\SignalLoop))
+#10 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(94): yii\queue\cli\Queue->runWorker(Object(Closure))
+#11 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Command.php(68): yii\queue\db\Queue->run(true, 3)
+#12 [internal function]: yii\queue\db\Command->actionListen(3)
+#13 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /vagrant/ws/project/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('listen', Array)
+#16 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('listen', Array)
+#17 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#18 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#19 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /vagrant/ws/project/yii(27): yii\base\Application->run()
+#21 {main}
+2018-03-22 11:57:45 [pid: 3679] - Worker is stopped (0:00:00)
+Exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'reserved_at' cannot be null
+The SQL being executed was: UPDATE `queue` SET `reserved_at`=NULL WHERE `reserved_at` < 1521691065 - `ttr` and `done_at` is null'
+
+in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:664
+
+Error Info:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'reserved_at' cannot be null
+)
+
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `queue` ...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1075): yii\db\Command->internalExecute('UPDATE `queue` ...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(248): yii\db\Command->execute()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(184): yii\queue\db\Queue->moveExpired()
+#4 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\db\Connection))
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1059): call_user_func(Object(Closure), Object(yii\db\Connection))
+#6 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(212): yii\db\Connection->useMaster(Object(Closure))
+#7 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(79): yii\queue\db\Queue->reserve()
+#8 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\queue\cli\SignalLoop))
+#9 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/cli/Queue.php(108): call_user_func(Object(Closure), Object(yii\queue\cli\SignalLoop))
+#10 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(94): yii\queue\cli\Queue->runWorker(Object(Closure))
+#11 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Command.php(68): yii\queue\db\Queue->run(true, 3)
+#12 [internal function]: yii\queue\db\Command->actionListen(3)
+#13 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /vagrant/ws/project/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('listen', Array)
+#16 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('listen', Array)
+#17 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#18 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#19 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /vagrant/ws/project/yii(27): yii\base\Application->run()
+#21 {main}
+2018-03-22 11:57:47 [pid: 3685] - Worker is started
+2018-03-22 11:57:47 [pid: 3684] - Worker is started
+2018-03-22 11:57:47 [pid: 3687] - Worker is started
+2018-03-22 11:57:47 [pid: 3686] - Worker is started
+2018-03-22 11:57:48 [pid: 3685] - Worker is stopped (0:00:01)
+Exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'reserved_at' cannot be null
+The SQL being executed was: UPDATE `queue` SET `reserved_at`=NULL WHERE `reserved_at` < 1521691068 - `ttr` and `done_at` is null'
+
+in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:664
+
+Error Info:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'reserved_at' cannot be null
+)
+
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `queue` ...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1075): yii\db\Command->internalExecute('UPDATE `queue` ...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(248): yii\db\Command->execute()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(184): yii\queue\db\Queue->moveExpired()
+#4 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\db\Connection))
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1059): call_user_func(Object(Closure), Object(yii\db\Connection))
+#6 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(212): yii\db\Connection->useMaster(Object(Closure))
+#7 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(79): yii\queue\db\Queue->reserve()
+#8 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\queue\cli\SignalLoop))
+#9 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/cli/Queue.php(108): call_user_func(Object(Closure), Object(yii\queue\cli\SignalLoop))
+#10 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(94): yii\queue\cli\Queue->runWorker(Object(Closure))
+#11 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Command.php(68): yii\queue\db\Queue->run(true, 3)
+#12 [internal function]: yii\queue\db\Command->actionListen(3)
+#13 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /vagrant/ws/project/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('listen', Array)
+#16 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('listen', Array)
+#17 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#18 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#19 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /vagrant/ws/project/yii(27): yii\base\Application->run()
+#21 {main}
+2018-03-22 11:57:48 [pid: 3684] - Worker is stopped (0:00:01)
+Exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'reserved_at' cannot be null
+The SQL being executed was: UPDATE `queue` SET `reserved_at`=NULL WHERE `reserved_at` < 1521691068 - `ttr` and `done_at` is null'
+
+in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:664
+
+Error Info:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'reserved_at' cannot be null
+)
+
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `queue` ...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1075): yii\db\Command->internalExecute('UPDATE `queue` ...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(248): yii\db\Command->execute()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(184): yii\queue\db\Queue->moveExpired()
+#4 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\db\Connection))
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1059): call_user_func(Object(Closure), Object(yii\db\Connection))
+#6 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(212): yii\db\Connection->useMaster(Object(Closure))
+#7 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(79): yii\queue\db\Queue->reserve()
+#8 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\queue\cli\SignalLoop))
+#9 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/cli/Queue.php(108): call_user_func(Object(Closure), Object(yii\queue\cli\SignalLoop))
+#10 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(94): yii\queue\cli\Queue->runWorker(Object(Closure))
+#11 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Command.php(68): yii\queue\db\Queue->run(true, 3)
+#12 [internal function]: yii\queue\db\Command->actionListen(3)
+#13 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /vagrant/ws/project/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('listen', Array)
+#16 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('listen', Array)
+#17 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#18 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#19 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /vagrant/ws/project/yii(27): yii\base\Application->run()
+#21 {main}
+2018-03-22 11:57:48 [pid: 3687] - Worker is stopped (0:00:01)
+Exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'reserved_at' cannot be null
+The SQL being executed was: UPDATE `queue` SET `reserved_at`=NULL WHERE `reserved_at` < 1521691068 - `ttr` and `done_at` is null'
+
+in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:664
+
+Error Info:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'reserved_at' cannot be null
+)
+
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `queue` ...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1075): yii\db\Command->internalExecute('UPDATE `queue` ...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(248): yii\db\Command->execute()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(184): yii\queue\db\Queue->moveExpired()
+#4 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\db\Connection))
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1059): call_user_func(Object(Closure), Object(yii\db\Connection))
+#6 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(212): yii\db\Connection->useMaster(Object(Closure))
+#7 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(79): yii\queue\db\Queue->reserve()
+#8 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\queue\cli\SignalLoop))
+#9 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/cli/Queue.php(108): call_user_func(Object(Closure), Object(yii\queue\cli\SignalLoop))
+#10 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(94): yii\queue\cli\Queue->runWorker(Object(Closure))
+#11 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Command.php(68): yii\queue\db\Queue->run(true, 3)
+#12 [internal function]: yii\queue\db\Command->actionListen(3)
+#13 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /vagrant/ws/project/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('listen', Array)
+#16 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('listen', Array)
+#17 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#18 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#19 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /vagrant/ws/project/yii(27): yii\base\Application->run()
+#21 {main}
+2018-03-22 11:57:48 [pid: 3686] - Worker is stopped (0:00:01)
+Exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'reserved_at' cannot be null
+The SQL being executed was: UPDATE `queue` SET `reserved_at`=NULL WHERE `reserved_at` < 1521691068 - `ttr` and `done_at` is null'
+
+in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:664
+
+Error Info:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'reserved_at' cannot be null
+)
+
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `queue` ...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1075): yii\db\Command->internalExecute('UPDATE `queue` ...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(248): yii\db\Command->execute()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(184): yii\queue\db\Queue->moveExpired()
+#4 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\db\Connection))
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1059): call_user_func(Object(Closure), Object(yii\db\Connection))
+#6 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(212): yii\db\Connection->useMaster(Object(Closure))
+#7 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(79): yii\queue\db\Queue->reserve()
+#8 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\queue\cli\SignalLoop))
+#9 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/cli/Queue.php(108): call_user_func(Object(Closure), Object(yii\queue\cli\SignalLoop))
+#10 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(94): yii\queue\cli\Queue->runWorker(Object(Closure))
+#11 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Command.php(68): yii\queue\db\Queue->run(true, 3)
+#12 [internal function]: yii\queue\db\Command->actionListen(3)
+#13 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /vagrant/ws/project/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('listen', Array)
+#16 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('listen', Array)
+#17 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#18 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#19 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /vagrant/ws/project/yii(27): yii\base\Application->run()
+#21 {main}
+2018-03-22 11:57:51 [pid: 3692] - Worker is started
+2018-03-22 11:57:51 [pid: 3693] - Worker is started
+2018-03-22 11:57:51 [pid: 3694] - Worker is started
+2018-03-22 11:57:51 [pid: 3695] - Worker is started
+2018-03-22 11:57:52 [pid: 3692] - Worker is stopped (0:00:01)
+Exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'reserved_at' cannot be null
+The SQL being executed was: UPDATE `queue` SET `reserved_at`=NULL WHERE `reserved_at` < 1521691072 - `ttr` and `done_at` is null'
+
+in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:664
+
+Error Info:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'reserved_at' cannot be null
+)
+
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `queue` ...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1075): yii\db\Command->internalExecute('UPDATE `queue` ...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(248): yii\db\Command->execute()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(184): yii\queue\db\Queue->moveExpired()
+#4 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\db\Connection))
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1059): call_user_func(Object(Closure), Object(yii\db\Connection))
+#6 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(212): yii\db\Connection->useMaster(Object(Closure))
+#7 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(79): yii\queue\db\Queue->reserve()
+#8 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\queue\cli\SignalLoop))
+#9 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/cli/Queue.php(108): call_user_func(Object(Closure), Object(yii\queue\cli\SignalLoop))
+#10 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(94): yii\queue\cli\Queue->runWorker(Object(Closure))
+#11 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Command.php(68): yii\queue\db\Queue->run(true, 3)
+#12 [internal function]: yii\queue\db\Command->actionListen(3)
+#13 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /vagrant/ws/project/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('listen', Array)
+#16 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('listen', Array)
+#17 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#18 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#19 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /vagrant/ws/project/yii(27): yii\base\Application->run()
+#21 {main}
+2018-03-22 11:57:52 [pid: 3694] - Worker is stopped (0:00:01)
+Exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'reserved_at' cannot be null
+The SQL being executed was: UPDATE `queue` SET `reserved_at`=NULL WHERE `reserved_at` < 1521691072 - `ttr` and `done_at` is null'
+
+in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:664
+
+Error Info:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'reserved_at' cannot be null
+)
+
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `queue` ...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1075): yii\db\Command->internalExecute('UPDATE `queue` ...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(248): yii\db\Command->execute()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(184): yii\queue\db\Queue->moveExpired()
+#4 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\db\Connection))
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1059): call_user_func(Object(Closure), Object(yii\db\Connection))
+#6 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(212): yii\db\Connection->useMaster(Object(Closure))
+#7 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(79): yii\queue\db\Queue->reserve()
+#8 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\queue\cli\SignalLoop))
+#9 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/cli/Queue.php(108): call_user_func(Object(Closure), Object(yii\queue\cli\SignalLoop))
+#10 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(94): yii\queue\cli\Queue->runWorker(Object(Closure))
+#11 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Command.php(68): yii\queue\db\Queue->run(true, 3)
+#12 [internal function]: yii\queue\db\Command->actionListen(3)
+#13 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /vagrant/ws/project/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('listen', Array)
+#16 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('listen', Array)
+#17 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#18 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#19 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /vagrant/ws/project/yii(27): yii\base\Application->run()
+#21 {main}
+2018-03-22 11:57:52 [pid: 3693] - Worker is stopped (0:00:01)
+Exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'reserved_at' cannot be null
+The SQL being executed was: UPDATE `queue` SET `reserved_at`=NULL WHERE `reserved_at` < 1521691072 - `ttr` and `done_at` is null'
+
+in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:664
+
+Error Info:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'reserved_at' cannot be null
+)
+
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `queue` ...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1075): yii\db\Command->internalExecute('UPDATE `queue` ...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(248): yii\db\Command->execute()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(184): yii\queue\db\Queue->moveExpired()
+#4 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\db\Connection))
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1059): call_user_func(Object(Closure), Object(yii\db\Connection))
+#6 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(212): yii\db\Connection->useMaster(Object(Closure))
+#7 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(79): yii\queue\db\Queue->reserve()
+#8 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\queue\cli\SignalLoop))
+#9 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/cli/Queue.php(108): call_user_func(Object(Closure), Object(yii\queue\cli\SignalLoop))
+#10 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(94): yii\queue\cli\Queue->runWorker(Object(Closure))
+#11 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Command.php(68): yii\queue\db\Queue->run(true, 3)
+#12 [internal function]: yii\queue\db\Command->actionListen(3)
+#13 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /vagrant/ws/project/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('listen', Array)
+#16 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('listen', Array)
+#17 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#18 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#19 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /vagrant/ws/project/yii(27): yii\base\Application->run()
+#21 {main}
+2018-03-22 11:57:52 [pid: 3695] - Worker is stopped (0:00:01)
+Exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'reserved_at' cannot be null
+The SQL being executed was: UPDATE `queue` SET `reserved_at`=NULL WHERE `reserved_at` < 1521691072 - `ttr` and `done_at` is null'
+
+in /vagrant/ws/project/vendor/yiisoft/yii2/db/Schema.php:664
+
+Error Info:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'reserved_at' cannot be null
+)
+
+Stack trace:
+#0 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'UPDATE `queue` ...')
+#1 /vagrant/ws/project/vendor/yiisoft/yii2/db/Command.php(1075): yii\db\Command->internalExecute('UPDATE `queue` ...')
+#2 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(248): yii\db\Command->execute()
+#3 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(184): yii\queue\db\Queue->moveExpired()
+#4 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\db\Connection))
+#5 /vagrant/ws/project/vendor/yiisoft/yii2/db/Connection.php(1059): call_user_func(Object(Closure), Object(yii\db\Connection))
+#6 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(212): yii\db\Connection->useMaster(Object(Closure))
+#7 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(79): yii\queue\db\Queue->reserve()
+#8 [internal function]: yii\queue\db\Queue->yii\queue\db\{closure}(Object(yii\queue\cli\SignalLoop))
+#9 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/cli/Queue.php(108): call_user_func(Object(Closure), Object(yii\queue\cli\SignalLoop))
+#10 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Queue.php(94): yii\queue\cli\Queue->runWorker(Object(Closure))
+#11 /vagrant/ws/project/vendor/yiisoft/yii2-queue/src/drivers/db/Command.php(68): yii\queue\db\Queue->run(true, 3)
+#12 [internal function]: yii\queue\db\Command->actionListen(3)
+#13 /vagrant/ws/project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#14 /vagrant/ws/project/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 /vagrant/ws/project/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('listen', Array)
+#16 /vagrant/ws/project/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('listen', Array)
+#17 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#18 /vagrant/ws/project/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#19 /vagrant/ws/project/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 /vagrant/ws/project/yii(27): yii\base\Application->run()
+#21 {main}

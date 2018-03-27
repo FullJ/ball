@@ -1,0 +1,166 @@
+
+$sideWidth: 220px;
+$topHeight: 50px;
+$bottomHeight: 20px;
+$titleHeight: 50px;
+$pageMinWidth: 1024px;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $bgColor;
+    color: $darkGray;
+    font: normal 14px Arial, Helvetica, "Microsoft Yahei", sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: $darkGray;
+    text-decoration: none;
+}
+
+input, button, textarea {
+    outline: none;
+    font-family: inherit;
+}
+
+html {
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+        background-color: $lightGray;
+        border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: $primaryOrange;
+        border-radius: 4px;
+    }
+}
+
+.g-sidebar {
+    position: fixed;
+    width: $sideWidth;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 1s;
+    z-index: 999;
+    ._toggle {
+        position: absolute;
+        bottom: 100px;
+        right: -40px;
+        color: $withe;
+        width: 40px;
+        height: 30px;
+        border-radius: 0 30px 30px 0;
+        text-align: center;
+        line-height: 30px;
+        cursor: pointer;
+        display: none;
+        background: $primaryOrange;
+    }
+
+}
+.g-topbar{
+    position:fixed;
+    top:0;
+    left: $sideWidth;
+    width: 100%;
+    height:$topHeight;
+    color: #fff;
+    background:#696969;
+    font-size:16px;
+    line-height: $topHeight;
+    padding-left: 20px;
+}
+.g-content {
+    min-width: $pageMinWidth;
+    margin: $topHeight 0 $bottomHeight $sideWidth;
+    position: relative;
+    left: 0;
+    top: 20px;
+    .g-top-nav {
+        position: fixed;
+        width: 100%;
+        top: $topHeight;
+        left: $sideWidth;
+        box-sizing: border-box;
+        z-index: 333;
+        padding: 10px 10px 0;
+        background: $bgColor;
+        color: $middleGray;
+    }
+    ._top {
+        height: $titleHeight;
+        background: $withe;
+        line-height: $titleHeight;
+        font-size: 16px;
+        border-top: 4px solid #f3e6d3;
+        border-bottom: 1px solid $tableBorder;
+        .__title {
+            padding-left: 30px;
+            padding-right: 10px;
+        }
+        .__hint {
+            span {
+                padding-right: 10px;
+            }
+            color: $primaryRed;
+        }
+    }
+    ._page {
+        @extend .g-f-clearfix;
+        margin: 0 10px;
+        background: $withe;
+        padding: 20px;
+    }
+}
+
+.g-footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: $sideWidth;
+    height: $bottomHeight;
+    line-height: $bottomHeight;
+    background: #fff;
+    text-align: right;
+    img {
+        vertical-align: middle;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 1280px) {
+    $sideWidth: 0px;
+    $left: -220px;
+    $pageMinWidth: 1234px;
+    .g-sidebar {
+        &.min {
+            left: $left;
+        }
+        ._toggle {
+            display: block;
+        }
+    }
+    .g-topbar {
+        left: $sideWidth;
+        max-height: $topHeight;    }
+    .g-content {
+        min-width: $pageMinWidth;
+        margin: $topHeight 0 $bottomHeight $sideWidth;
+        .g-top-nav {
+            left: $sideWidth;
+        }
+        ._page {
+        }
+    }
+}
+

@@ -1,0 +1,694 @@
+@charset "utf-8";
+
+/**
+ * form.scss
+ */
+
+$formBorder: #e8e8e8;
+$formHover: #eee;
+$formRadius: 4px;
+$formHeight: 34px;
+$formUnit: 16px;
+$formFont: 14px;
+$formPad: 12px;
+$paddsize:20px;
+$formSelectHeight: 300px;
+$formSelectWidth:360px;
+$cardheadHeight:40px;
+$cardheadBg:#f0f1f8;
+$cardlabelWidth:28%;
+$checkiconMRight:5px;
+@mixin btnBase($bgColor, $hoverBg, $color, $hoverColor:$color) {
+    display: inline-block;
+    padding: 0 20px;
+    height: $formHeight;
+    line-height: $formHeight;
+    border-radius: $formRadius;
+    background: $bgColor;
+    color: $color;
+    text-align: center;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 14px;
+    &:hover {
+        background: $hoverBg;
+        color: $hoverColor;
+    }
+    &:active {
+        background: darken($hoverBg, 5%);
+    }
+    &.sm {
+        line-height: 22px;
+        height: 22px;
+        padding: 0 10px;
+        font-size: 12px;
+    }
+}
+
+@mixin checkIcon($color) {
+    color: $color;
+    vertical-align: middle;
+    margin-right: $checkiconMRight;
+}
+
+@mixin switchBase() {
+    $width: 110px;
+    $size: 34px;
+    -webkit-appearance: none;
+    border: 1px solid $formBorder;
+    border-radius: $size;
+    width: $width;
+    height: $size;
+    position: relative;
+    background: #fff;
+    box-shadow: $formBorder 0 0 0 0 inset;
+    color: $lightGray;
+    display: inline-block;
+    &:after {
+        content: "关闭";
+        transition: left .3s;
+        position: absolute;
+        right: 16px;
+        line-height: $size;
+        font-size: 14px;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: 3;
+        transition: left .3s;
+        left: -1px;
+        width: $size - 2;
+        height: $size - 2;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, .3);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+        background: #fff;
+    }
+    &:checked,
+    &.active {
+        background: $primaryOrange;
+        color: #fff;
+        &:after {
+            content: "开启";
+            left: 16px;
+        }
+        &:before {
+            content: '\e63b';
+            border-color: $primaryOrange;
+            left: $width - $size;
+            color: $primaryOrange;
+            font-family: 'iconfont';
+            line-height: $size;
+            text-align: center;
+            font-size:16px;
+        }
+    }
+}
+
+%unitBase {
+    appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    width: $formUnit;
+    height: $formUnit;
+    vertical-align: middle;
+}
+
+%selectBase {
+    height: $formHeight;
+    line-height: $formHeight;
+    background: #fff;
+    border: 1px solid $formBorder;
+    padding: 0 $formPad;
+}
+
+%form {
+    @at-root .g-input,
+    & input[type="text"],
+    & input[type="password"],
+    & input[type="number"] {
+        box-sizing: border-box;
+        display: inline-block;
+        border: 1px solid $formBorder;
+        height: $formHeight;
+        min-width: $formSelectWidth;
+        padding: 0 $formPad;
+        background-color: #fff;
+        color: $darkGray;
+        transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+        &:focus, &.error {
+            border-color: $primaryOrange;
+            box-shadow: 0 0 3px 0 $primaryOrange;
+        }
+        &.disabled {
+            border-color: $lightGray;
+            color: $lightGray;
+        }
+        $sizelis:4,6,8;
+        @for $i from 1 through length($sizelis) {
+            &.size#{nth($sizelis, $i)} {
+                min-width: 0;
+                width:#{nth($sizelis, $i)}em;
+            }
+        }
+        &.g-none {
+            display: none;
+        }
+        &.small{
+            min-width: 220px;
+        }
+    }
+    @at-root .g-textarea,
+    & textarea {
+        @extend .g-input;
+        padding-top: 10px;
+        min-width: 360px;
+        min-height: 100px;
+    }
+    @at-root .g-select,
+    & .select {
+        display: inline-block;
+        white-space: nowrap;
+        position: relative;
+        font-size: $formFont;
+        vertical-align: middle;
+        .selected {
+            @extend %selectBase;
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            padding-right: 25px;
+            cursor: default;
+            min-width: $formSelectWidth;
+            max-width: $formSelectWidth;
+            overflow: hidden;
+            &:after {
+                content: "\e62d";
+                font-family: "iconfont";
+                position: absolute;
+                background: #fff;
+                right:-3px;
+                width:25px;
+                text-align: center;
+                font-size: 12px;
+                cursor: pointer;
+                transform: scale(.8);
+            }
+            .text {
+                color: $darkGray;
+            }
+            .placeholder {
+                color: $lightGray;
+            }
+        }
+        ul {
+            display: none;
+            position: absolute;
+            z-index: 99;
+            top: $formHeight;
+            left: 0;
+            min-width: 100%;
+            box-sizing: border-box;
+            background: #fff;
+            border: 1px solid $formBorder;
+            max-height: $formSelectHeight;
+            overflow-y: auto;
+            li:not(._search-li) {
+                padding: 0 $formPad;
+                padding-right: 25px;
+                line-height: $formHeight;
+                cursor: pointer;
+                &:hover {
+                    background: $primaryOrange;
+                    color: #fff;
+                }
+            }
+            ._search-li{
+                position:relative;
+                height:34px;
+                width:100%;
+                .search{
+                    height: 34px;
+                    line-height: 34px;
+                    background: #fff;
+                    border: 1px solid #e8e8e8;
+                    padding: 0 12px;
+                    min-width: 100%;
+                    box-sizing: border-box;
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    z-index:5;
+                    display: block;
+                }
+                span.icon-sousuo{
+                    position:absolute;
+                    right:10px;
+                    line-height: 34px;
+                    z-index:6;
+                }
+            }
+        }
+        & input[type="text"] {
+            display: none;
+        }
+        &:hover,
+        &.active,
+        &:focus {
+            .selected {
+                border-color: $primaryOrange;
+                box-shadow: 0 0 3px 0 $primaryOrange;
+            }
+        }
+        &.active {
+            .selected {
+                &:after {
+                    content: "\e62e";
+                }
+            }
+        }
+        &.disabled,
+        &.disabled:hover {
+            .selected {
+                border-color: $formBorder;
+                background: $formHover;
+                color: $middleGray;
+                .text {
+                    color: $middleGray;
+                }
+            }
+        }
+    }
+    @at-root .g-checkbox,
+    & input[type=checkbox] {
+        @extend %unitBase;
+        margin-right: 10px;
+        &:before {
+            content: "";
+            position: absolute;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border-radius: 2px;
+            background: #fff;
+            border: 1px solid $formBorder;
+        }
+        &:checked:before {
+            content: "\e607";
+            color: $primaryPurple;
+            border-color: $primaryPurple;
+            font-family: "iconfont";
+            text-align: center;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: .2px;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        &.choose {
+            width: 16px;
+            height: 16px;
+            color: #7680e5;
+            border-radius: 2px;
+            border: 1px solid #7680e5;
+            &:before {
+                content: "";
+                width: 12px;
+                height: 12px;
+                margin: 1px;
+                border-radius: 2px;
+                color: #7680e5;
+                background: #7680e5;
+                border: 1px solid $formBorder;
+            }
+        }
+    }
+    @at-root .g-radio,
+    & input[type=radio] {
+        @extend %unitBase;
+        margin-right: 10px;
+        &:before {
+            content: "";
+            position: absolute;
+            color: $darkGray;
+            width: $formUnit - 2;
+            height: $formUnit - 2;
+            border-radius: 50%;
+            background: #fff;
+            border: 1px solid $primaryOrange;
+        }
+        &:checked:after {
+            content: "";
+            display: inline-block;
+            width: $formUnit / 2;
+            height: $formUnit / 2;
+            background: $primaryOrange;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+    label+label {
+        margin-left: 20px;
+    }
+    @at-root .g-btn-switch,
+    & input[type=checkbox]._btn-switch {
+        @include switchBase
+    }
+    @at-root .g-btn-switch.sm,
+    & input[type=checkbox]._btn-switch.sm {
+        $width: 70px;
+        $size: 30px;
+        @include size($width, $size);
+        &:after {
+            line-height: $size;
+            right: 8px;
+        }
+        &:before {
+            width: $size - 2;
+            height: $size - 2;
+        }
+        &:checked,
+        &.active {
+            &:before {
+                left: $width - $size;
+                line-height: $size - 2;
+            }
+            &:after {
+                left: 8px;
+            }
+        }
+    }
+}
+
+.g-btn-red {
+    @include btnBase($primaryOrange, $primaryOrangeDark, #fff);
+}
+
+.g-btn-line {
+    @include btnBase(#fff, $primaryOrange, $darkGray, #fff);
+    border: 1px solid $formBorder;
+}
+
+.g-btn-blue-line {
+    @include btnBase(#fff, $primaryBlue, $primaryBlueDark, #fff);
+    border: 1px solid $primaryBlue;
+}
+
+.g-btn-blue {
+    @include btnBase($primaryBlue, $primaryBlueDark, #fff);
+}
+
+.g-btn-pick {
+    @include btnBase($primarypick, $primarypick, $darkGray);
+    border: 1px solid $formBorder;
+}
+//根据UI，所有的紫色添加按钮变为蓝色
+.g-btn-purple {
+    @include btnBase($primaryBlue, $primaryBlueDark, #fff);
+}
+
+.g-btn-gray {
+    @include btnBase($lightGray, $middleGray, #fff);
+}
+.g-btn-lightGray {
+    @include btnBase($gray, $primaryOrange, #999,#fff);
+}
+.g-btns {
+    text-align: center;
+    padding: 20px;
+    &>* {
+        margin-right: 22px;
+    }
+}
+
+.g-form-search {
+    @extend %form;
+    background: $withe;
+    padding-bottom: $paddsize;
+    ._search-box {
+        @extend .g-f-clearfix;
+        &>input[type="text"] {
+            float: left;
+            width: 334px;
+        }
+        &>button[type="submit"] {
+            @include btnBase($primaryBlue, $primaryBlueDark, #fff);
+            float: left;
+            margin: 0 20px 0 10px;
+        }
+        .__more {
+            float: left;
+            cursor: pointer;
+            padding-top: 10px;
+            &:after {
+                content: "\e627";
+                font-family: "iconfont";
+            }
+            &.active:after {
+                content: "\e626";
+            }
+        }
+        .__btns {
+            @extend .g-f-fr;
+            &>* {
+                @include btnBase($primaryBlue, $primaryBlueDark, #fff);
+            }
+        }
+    }
+    ._toggle-box {
+        background: $toggleboxBg;
+        margin-top:$paddsize;
+        padding: $paddsize;
+        display: none;
+        div{
+            @extend .g-f-clearfix;
+        }
+        & input[type="text"],
+        & input[type="number"],
+        & .select {
+            margin-right: 10px;
+            margin-bottom: 10px;
+            float: left;
+        }
+        & span:not(.selected) {
+            margin-right: 10px;
+            float: left;
+            line-height:34px;
+        }
+        .__btns {
+            &>*+* {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+.g-form{
+    @extend %form;
+    min-width: 380px;
+    ._head {
+        height: $cardheadHeight;
+        background: $cardheadBg;
+        color: $primaryRed;
+        line-height: $cardheadHeight;
+        font-size: $formUnit;
+        &:before {
+            content: '';
+            margin: 0 10px 0 16px;
+            border-right: 2px solid $primaryOrange;
+        }
+    }
+    ._content {
+        @extend .g-f-clearfix;
+        .__line {
+            @extend .g-f-clearfix;
+            min-height: 20px;
+            position: relative;
+            width: 100%;
+            font-size: $formFont;
+            margin: 20px 0;
+            &>label {
+                text-overflow:ellipsis;
+                overflow:hidden;
+                white-space:nowrap;
+                position: absolute;
+                width: $cardlabelWidth / 2;
+                left: 0;
+                top: 0;
+                text-align: right;
+                line-height: $formHeight;
+                .require {
+                    color: $primaryRed;
+                    margin-right: 5px;
+                }
+            }
+            &>div {
+                margin-left: $cardlabelWidth / 2;
+                padding-left: 10px;
+                .tip,
+                .tip-warn {
+                    display: block;
+                    padding: 8px 0 0;
+                    color: $lightGray;
+                    font-size: 12px;
+                }
+                .tip-warn {
+                    color: $primaryRed;
+                }
+                .hint {
+                    @extend .tip;
+                    display: inline;
+                    position: static;
+                    border: none;
+                    box-shadow: none;
+                    margin: 0;
+                }
+                label {
+                    margin-right: 10px;
+                }
+            }
+            &.text {
+                &>label {
+                    line-height: normal;
+                }
+                &>div {
+                    margin: {
+                        top: 30px;
+                        bottom: 30px;
+                    }
+                }
+            }
+        }
+        .__liner {
+            @extend .__line;
+            &>label {
+                width: $cardlabelWidth;
+            }
+            &>div {
+                margin-left: $cardlabelWidth;
+            }
+        }
+        .__left {
+            @extend .g-f-fl;
+            width: 50%;
+            .__line {
+                &>label {
+                    width: $cardlabelWidth;
+                }
+                &>div {
+                    margin-left: $cardlabelWidth;
+                }
+            }
+        }
+    }
+    ._text-list {
+        line-height: 26px;
+        padding-top: 16px;
+    }
+    ._content+._content {
+        border-top: 1px solid $tableBorder;
+    }
+}
+
+.pagination {
+    %pageBtn {
+        background-color: #fff;
+        border: 1px solid $formBorder;
+        border-right-width: 0;
+        display: block;
+        line-height: 32px;
+        padding: 0 12px;
+    }
+    .go-page {
+        display: inline-block;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+    }
+    float:right;
+    padding: 10px;
+    background-color: #fff;
+    height: $formHeight;
+    ul {
+        @extend .g-f-clearfix;
+        float: left;
+        border-radius: $formRadius;
+        display: inline-block;
+    }
+    li {
+        float: left;
+        &:first-child {
+            a,
+            span {
+                border-left-width: 1px;
+                border-radius: $formRadius 0 0 $formRadius;
+            }
+        }
+        &:last-child {
+            a,
+            span {
+                border-right-width: 1px;
+                border-radius: 0 $formRadius $formRadius 0;
+            }
+        }
+    }
+    a,
+    li span {
+        @extend %pageBtn;
+        &:hover {
+            background: $formHover;
+        }
+    }
+    .active,
+    .disabled {
+        a,
+        span {
+            background: $formHover;
+            color: $lightGray;
+            cursor: default;
+        }
+    }
+    .disabled {
+        a,
+        a:hover,
+        span {
+            cursor: not-allowed;
+        }
+    }
+    // 后台生成跳转翻页
+    .jumpUrl {
+        float: left;
+        margin-left: 10px;
+        color: $lightGray;
+        .text,
+        .input {
+            float: left;
+            border: 1px solid $formBorder;
+            padding: 0 5px;
+        }
+        .text {
+            border: none;
+            line-height: 32px;
+        }
+        .input {
+            text-align: center;
+            line-height: 26px;
+            margin: 3px 0;
+            width: 3em;
+        }
+        .go-page {
+            outline: 0;
+            @extend .g-btn-line;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 1280px) {}

@@ -1,0 +1,234 @@
+@charset "utf-8";
+$bgColor: #f1f4f7;
+$topBgColor: #fff;
+
+$primaryOrange: #696969;
+$primaryOrangeDark: darken(#696969, 30%);
+$primaryBlue: darken(#696969, 10%);
+$primaryBlueDark: darken(#696969, 20%);
+$primaryPurple:#7680e5;
+$primaryPurpleDark:#727ce5;
+$primaryRed:#db4631;
+$primarypick:#fff6f4;
+
+$darkGray: #333;
+$middleGray: #666;
+$lightGray: #999;
+$gray:#e3e3e3;
+
+$tablebar:#f0f2f7;
+$tableHeadBg:lighten(#696969, 25%);
+$tableBorder: #cdcdcd;
+$tableHover: #f8f8f8;
+$toggleboxBg:#f6f6f6;
+ 
+@import url('//at.alicdn.com/t/font_526911_zg206icouy7dgqfr.css');
+
+$withe:#fff;
+[class*="js-"]{
+    cursor: pointer;
+}
+@mixin size($w,$h:$w){
+    width: $w;
+    height: $h;
+}
+.uploadifive-button{
+    border: 1px solid #bbb;
+}
+.uploadifive-queue{
+   display:none !important; 
+}
+/*自适应*/
+$total: 12;
+@function column-width($col) {
+    @return percentage($col/$total);
+}
+
+%float{
+    float: left;
+}
+@for $i from 1 through $total {
+    .g-w-#{$i} {
+        width: column-width($i)
+    }
+    .g-fw-#{$i}{
+        @extend %float;
+        @extend .g-w-#{$i};
+    }
+}
+.iconfont{
+    font-size: 20px;
+}
+/* layout:padding/margin  */
+$number:10,20,30;
+@for $i from 1 through length($number) {
+    $m:#{nth($number, $i)}px;
+
+    .l-mt-#{nth($number, $i)} {
+        margin-top:$m;
+    };
+    .l-mb-#{nth($number, $i)} {
+        margin-bottom:$m;
+    };
+    .l-mtb-#{nth($number, $i)}{
+        margin-top:$m;
+        margin-bottom:$m;
+    }
+    .l-ml-#{nth($number, $i)} {
+        margin-left:$m;
+    };
+    .l-mr-#{nth($number, $i)} {
+        margin-right:$m;
+    };
+    .l-mlr-#{nth($number, $i)}{
+        margin-left:$m;
+        margin-right:$m;
+    }
+    .l-m-#{nth($number, $i)} {
+        margin-top:$m;
+        margin-bottom:$m;
+        margin-left:$m;
+        margin-right:$m;
+    };
+    .l-pt-#{nth($number, $i)} {
+        padding-top:$m;
+    };
+    .l-pb-#{nth($number, $i)} {
+        padding-bottom:$m;
+    };
+    .l-ptb-#{nth($number, $i)}{
+        padding-top:$m;
+        padding-bottom:$m;
+    }
+    .l-pl-#{nth($number, $i)} {
+        padding-left:$m;
+    };
+    .l-pr-#{nth($number, $i)} {
+        padding-right:$m;
+    };
+    .l-plr-#{nth($number, $i)}{
+        padding-left:$m;
+        padding-right:$m;
+    }
+    .l-p-#{nth($number, $i)} {
+        padding-top:$m;
+        padding-bottom:$m;
+        padding-left:$m;
+        padding-right:$m;
+    };
+}
+/*color*/
+.g-color-red{
+    color:$primaryRed;
+}
+.g-color-blue{
+    color:$primaryBlue;
+}
+.g-color-dark{
+    color:$darkGray;
+}
+.g-color-middlegray{
+    color:$middleGray;
+}
+.g-color-lightgray{
+    color:$lightGray;
+}
+.g-color-orange{
+    color: $primaryOrange !important;
+}
+/*font-size*/
+.g-fs-12{
+    font-size:12px;
+}
+.g-fs-14{
+    font-size:14px;
+}
+.g-fs-16{
+    font-size:16px;
+}
+/* functional: clearfix/float */
+.g-f-fl{
+    float:left;
+}
+.g-f-fr{
+    float:right;
+}
+.g-overflow{
+    overflow: hidden;
+}
+.g-f-clearfix{
+    &:before, &:after {
+        content: "";
+        display: block;
+        clear: both;
+        height: 0;
+        font-size: 0;
+    }
+}
+.g-tl{
+    text-align: left;
+}
+.g-tc{
+    text-align:center;
+}
+.g-tr{
+    text-align: right;
+}
+.g-no-border{
+    border:none !important;
+}
+.g-none{
+    display: none;
+}
+.g-show{
+    display: inline-block !important;
+}
+.g-none-i{
+    display: none !important;
+}
+.g-no-wrap{
+    white-space: nowrap;
+}
+.w-min-8em{
+    min-width: 8em !important;
+}
+.wh-100px{
+    @include size(100px);
+}
+.wh-68px{
+    @include size(68px);
+}
+.g-text-over{
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+}
+.g-img{
+    @include size(100px);
+}
+.g-choose-box{
+    $size:24px;
+    @include size(68px);
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    border:1px solid $tableBorder;
+    & img{
+        z-index:10;
+        position: relative;
+        width:100%;
+        height:100%;
+        background: #fff;
+    }
+    &:after{
+        content:'+';
+        position: absolute;
+        top:50%;
+        margin-top:- $size / 2;
+        left:0;
+        width:100%;
+        font-size:$size;
+        text-align: center;
+        color:$darkGray;
+    }
+}
